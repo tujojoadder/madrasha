@@ -74,7 +74,7 @@
                     </div>
                 </main>
 
-                {{--    @include('layouts.user.partials.footer') --}}
+                
             </div>
         </div>
 
