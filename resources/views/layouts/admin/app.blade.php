@@ -63,7 +63,7 @@
 </head>
 
 <body>
-    <div class="app-wrapper p-0 m-0">
+    <div class="app-wrapper " style="box-shadow: none">
 
         {{-- loader --}}
          <div class="loader-wrapper">
@@ -73,7 +73,7 @@
         {{-- manu bar --}}
         @include('layouts.admin.partials.manu_navigation')
         {{-- Body main section --}}
-        <div class="app-content ">
+        <div class="app-content " style="box-shadow: none">
             <div class="">
 
                 {{-- Header Section --}}
