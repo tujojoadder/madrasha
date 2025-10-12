@@ -48,6 +48,18 @@
 
     <!-- Responsive css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
+
+    <!--font-awesome-css-->
+    <link href="../assets/vendor/fontawesome/css/all.css" rel="stylesheet">
+
+    <!-- iconoir icon css  -->
+    <link href="../assets/vendor/ionio-icon/css/iconoir.css" rel="stylesheet">
+
+
+    <!-- Font Awesome JS Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-..."
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -74,7 +86,7 @@
                     </div>
                 </main>
 
-                
+
             </div>
         </div>
 

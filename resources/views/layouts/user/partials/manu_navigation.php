@@ -76,23 +76,16 @@
               <li class="menu-title">
                   <span>ড্যাশবোর্ড</span>
               </li>
-              <!-- single -->
+              <!-- ড্যাশবোর্ড -->
               <li class="no-sub">
-                  <a href="/dashboard">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#home"></use>
-                      </svg>
-                      ড্যাশবোর্ড
+                  <a href="/dashboard" class="d-flex align-items-center fw-bold">
+                      <i class="fa-regular fa-house"></i> ড্যাশবোর্ড
                   </a>
               </li>
-
-
               <!-- ছাত্র/ছাত্রী -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#students">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#students" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-users me-2"></i>
                       ছাত্র/ছাত্রী
                   </a>
                   <ul class="collapse" id="students">
@@ -111,13 +104,10 @@
               </li>
 
 
-
               <!-- শিক্ষক -->
-              <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#teachers">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                <li>
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#teachers" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-chalkboard-user me-2"></i>
                       শিক্ষক
                   </a>
                   <ul class="collapse" id="teachers">
@@ -128,13 +118,13 @@
                       <li><a href="api.html">শিক্ষকগণের নম্বর তালিকা</a></li>
 
                   </ul>
-              </li>
+                </li>
               <!-- মাসিক চাঁদাদাতা -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#monthly-donors">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                 
+
+                   <a aria-expanded="false" data-bs-toggle="collapse" href="#monthly-donors" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-calendar-check me-2"></i>
                       মাসিক চাঁদাদাতা
                   </a>
                   <ul class="collapse" id="monthly-donors">
@@ -146,11 +136,9 @@
               </li>
               <!-- দানকারী -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#donors">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
-                      দানকারী
+                   <a aria-expanded="false" data-bs-toggle="collapse" href="#donors" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-hand-holding-heart me-2"></i>
+                       দানকারী
                   </a>
                   <ul class="collapse" id="donors">
                       <li><a href="calendar.html">দানকারীর তালিকা</a></li>
@@ -161,11 +149,10 @@
               </li>
               <!-- যাকাত দাতা -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#zakat-donors">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
-                      দানকারী
+                
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#zakat-donors" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-gem me-2"></i>
+                       যাকাত দাতা
                   </a>
                   <ul class="collapse" id="zakat-donors">
                       <li><a href="calendar.html">যাকাত দাতার তালিকা</a></li>
@@ -176,22 +163,20 @@
               </li>
 
               <!-- কমিটির সদস্যগণের তালিকা -->
+
               <li class="no-sub">
-                  <a href="widget.html">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#squares"></use>
-                      </svg>
-                      কমিটির সদস্যগণের তালিকা
+                  <a href="/dashboard" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-users-gear"></i> কমিটির সদস্যগণ
                   </a>
               </li>
+              
               <!-- হাজিরা -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#attendance">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                 <a aria-expanded="false" data-bs-toggle="collapse" href="#attendance" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-user-check me-2"></i>
                       হাজিরা
                   </a>
+                  
                   <ul class="collapse" id="attendance">
                       <li><a href="calendar.html">ছাত্র-ছাত্রী হাজিরা</a></li>
                       <li><a href="to_do.html">ছাত্র-ছাত্রী হাজিরা প্ৰতিবেদন </a></li>
@@ -201,10 +186,8 @@
               </li>
               <!-- রেজাল্ট -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#results">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#results" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-chart-line me-2"></i>
                       রেজাল্ট
                   </a>
                   <ul class="collapse" id="results">
@@ -213,12 +196,10 @@
                       <li><a href="team.html">ছাত্র-ছাত্রী ভিত্তিক রেজাল্ট</a></li>
                   </ul>
               </li>
-              <!-- রেজাল্ট -->
+              <!-- জমা/খরচ হিসাব সমূহ -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#income-expense">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#income-expense" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-wallet me-2"></i>
                       জমা/খরচ হিসাব সমূহ
                   </a>
                   <ul class="collapse" id="income-expense">
@@ -232,10 +213,8 @@
               </li>
               <!-- এস এম এস -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#sms">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#sms" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-message me-2"></i>
                       এস এম এস
                   </a>
                   <ul class="collapse" id="sms">
@@ -250,10 +229,8 @@
               </li>
               <!-- ভাউচার -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#vouchers">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#vouchers" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-file-invoice-dollar me-2"></i>
                       ভাউচার
                   </a>
                   <ul class="collapse" id="vouchers">
@@ -263,10 +240,8 @@
               </li>
               <!-- আইডি কার্ড -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#id-cards">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                    <a aria-expanded="false" data-bs-toggle="collapse" href="#id-cards" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-id-card me-2"></i>
                       আইডি কার্ড
                   </a>
                   <ul class="collapse" id="id-cards">
@@ -275,10 +250,8 @@
               </li>
               <!-- এ্যাকাউন্ট -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#accounts">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                   <a aria-expanded="false" data-bs-toggle="collapse" href="#accounts" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-building-columns me-2"></i>
                       এ্যাকাউন্ট
                   </a>
                   <ul class="collapse" id="accounts">
@@ -288,10 +261,8 @@
               </li>
               <!-- রিপোর্ট -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#reports">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#reports" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-file-alt me-2"></i>
                       রিপোর্ট
                   </a>
                   <ul class="collapse" id="reports">
@@ -310,38 +281,29 @@
               </li>
 
               <!-- দৈনিক আয়-ব্যয়ের প্রতিবেদন -->
+              
               <li class="no-sub">
-                  <a href="widget.html">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#squares"></use>
-                      </svg>
-                      দৈনিক আয়-ব্যয়ের প্রতিবেদন
+                  <a href="/dashboard" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-calendar-day me-2"></i> দৈনিক আয়-ব্যয়ের প্রতিবেদন
                   </a>
               </li>
               <!-- বার্ষিক আয়-ব্যয়ের প্রতিবেদন -->
+              
               <li class="no-sub">
-                  <a href="widget.html">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#squares"></use>
-                      </svg>
-                      বার্ষিক আয়-ব্যয়ের প্রতিবেদন
+                  <a href="/dashboard" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-calendar-week me-2"></i> বার্ষিক আয়-ব্যয়ের প্রতিবেদন
                   </a>
               </li>
               <!-- ব্যাংক প্রতিবেদন -->
               <li class="no-sub">
-                  <a href="widget.html">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#squares"></use>
-                      </svg>
-                      ব্যাংক প্রতিবেদন
+                  <a href="/dashboard" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-university me-2"></i> ব্যাংক প্রতিবেদন
                   </a>
               </li>
               <!-- সেটিং -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#settings">
-                      <svg stroke="currentColor" stroke-width="1.5">
-                          <use xlink:href="../assets/svg/_sprite.svg#stack"></use>
-                      </svg>
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#settings" class="d-flex align-items-center fw-bold">
+                      <i class="fa-solid fa-gear me-2"></i>
                       সেটিং
                   </a>
                   <ul class="collapse" id="settings">
