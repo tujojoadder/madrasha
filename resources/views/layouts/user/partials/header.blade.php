@@ -514,7 +514,7 @@
                                                             <span class="badge text-light-primary"> 30 min</span>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> 
                                                 <div class="notification-message head-box">
                                                     <div class="message-content-box flex-grow-1 pe-2">
                                                         <a class="f-s-15 text-dark mb-0"
