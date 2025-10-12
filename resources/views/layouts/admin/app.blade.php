@@ -14,7 +14,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/logo/favicon.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/logo/favicon.png') }}">
 
-    <title>Ecommerce Dashboard | ki-admin - Premium Admin Template</title>
+    <title>@yield('title', 'Ecommerce Dashboard | ki-admin - Premium Admin Template')</title>
 
     <!-- Animation css -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/animation/animate.min.css') }}">
@@ -55,23 +55,29 @@
     <!-- iconoir icon css  -->
     <link href="../assets/vendor/ionio-icon/css/iconoir.css" rel="stylesheet">
 
-
     <!-- Font Awesome JS Core -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-..."
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- jQuery UI CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    
+    
+    
+    <!-- Specific Styles  -->
+    @stack('styles')
 </head>
 
 <body>
     <div class="app-wrapper " style="box-shadow: none">
 
         {{-- loader --}}
-         <div class="loader-wrapper">
+        <div class="loader-wrapper">
             <div class="loader_24"></div>
         </div>
 
         {{-- manu bar --}}
         @include('layouts.admin.partials.manu_navigation')
+
         {{-- Body main section --}}
         <div class="app-content " style="box-shadow: none">
             <div class="">
@@ -86,6 +92,7 @@
             </div>
         </div>
         <!-- Body main section ends -->
+
         <!-- tap on top -->
         <div class="go-top">
             <span class="progress-value">
@@ -130,6 +137,14 @@
 
     <!-- App js -->
     <script src="{{ asset('assets/js/script.js') }}"></script>
+    <!-- jQuery UI CDN -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+
+
+    
+    <!--Specific Scripts  -->
+    @stack('scripts')
 
 </body>
 
