@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,11 @@ Route::get('/', function () {
 Auth::routes(); 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/*<<<--- admin --->>>*/
 Route::get('/dashboard', function () {
-    return view('user.dashboard');
+    return view('admin.dashboard');
 });
+/* student */
+// craete students
+Route::get('/create-student', [StudentController::class, 'create'])->name('create-student');
+Route::get('/student-list', [StudentController::class, 'index'])->name('student-list');

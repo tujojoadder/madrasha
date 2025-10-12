@@ -89,8 +89,8 @@
                       ছাত্র/ছাত্রী
                   </a>
                   <ul class="collapse" id="students">
-                      <li><a href="calendar.html">ছাত্র/ছাত্রী তৈরি</a></li>
-                      <li><a href="to_do.html">ছাত্র/ছাত্রী লিস্ট</a></li>
+                      <li><a href="{{ route('create-student') }}">ছাত্র/ছাত্রী তৈরি</a></li>
+                      <li><a href="{{ route('student-list') }}">ছাত্র/ছাত্রী লিস্ট</a></li>
                       <li><a href="team.html">জামাত অনুসারে ছাত্র/ছাত্রী </a></li>
                       <li><a href="api.html">জামাত অনুসারে ভর্তি প্রতিবেদন</a></li>
                       <li><a href="invoice.html">জামাত অনুসারে ভর্তি রেজিষ্টার</a></li>
