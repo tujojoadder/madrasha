@@ -29,4 +29,7 @@ Route::get('/dashboard', function () {
 /* student */
 // craete students
 Route::get('/create-student', [StudentController::class, 'create'])->name('create-student');
-Route::get('/student-list', [StudentController::class, 'index'])->name('student-list');
+// students list
+Route::get('/students-list', [StudentController::class, 'index'])->name('student-list');
+// students by jamat
+Route::get('/students-by-jamat',[StudentController::class,'studentsByJamat'])->name('students.by.jamaat');

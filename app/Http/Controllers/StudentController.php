@@ -12,7 +12,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-      return view('admin.students.student_list');
+        return view('admin.students.students_list');
     }
 
     /**
@@ -61,5 +61,9 @@ class StudentController extends Controller
     public function destroy(Student $student)
     {
         //
+    }
+    public function studentsByJamat()
+    {
+       return view('admin.students.students_by_jamat');
     }
 }

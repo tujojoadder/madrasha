@@ -4,31 +4,31 @@
 
 @section('content')
 
-  <div>
-            <ol class="breadcrumb  bg-light-secondary p-2">
-                <li class="breadcrumb-item"><i class="fa-solid fa-users me-2"></i>ছাত্র/ছাত্রী
-                </li>
-                <li aria-current="page" class="breadcrumb-item active fw-bold">ছাত্র/ছাত্রী লিস্ট
-                </li>
-            </ol>
-        </div>
+    <div>
+        <ol class="breadcrumb  bg-light-secondary p-2">
+            <li class="breadcrumb-item"><i class="fa-solid fa-users me-2"></i>ছাত্র/ছাত্রী
+            </li>
+            <li aria-current="page" class="breadcrumb-item active fw-bold">ছাত্র/ছাত্রী লিস্ট
+            </li>
+        </ol>
+    </div>
     <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">ছাত্র/ছাত্রী লিস্ট </h5>
-                    <button class="btn btn-info text-white fw-bold" type="button">
-                        <i class="fa-solid fa-plus"></i> নতুন ছাত্র/ছাত্রী যুক্ত করুন
-                    </button>
+                    <h5 class="mb-0"> <i class="fas fa-clipboard-list me-2"></i>ছাত্র/ছাত্রী লিস্ট </h5>
+                    <a href="{{ route('create-student') }}" class="btn btn-danger text-white fw-bold">
+                        <i class="fa-solid fa-plus me-1"></i> নতুন ছাত্র/ছাত্রী যুক্ত করুন
+                    </a>
                 </div>
                 <div class="card-body">
                     <!-- Filter Section -->
                     <div class="row mb-3">
-                        <div class="col-md-10">
+                        <div class="col-md-4 mb-sm-3 mb-md-0">
                             <input type="text" class="form-control" placeholder="নাম অথবা ফোন নম্বর দিয়ে খুঁজুন...">
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-primary w-100">
+                            <button class="btn btn-info w-100 b-r-22">
                                 <i class="fa-solid fa-search"></i> খুঁজুন
                             </button>
                         </div>
