@@ -12,7 +12,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('admin.students.students_list');
+        return view('admin.students.students-list');
     }
 
     /**
@@ -20,7 +20,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('admin.students.create_student');
+        return view('admin.students.create-student');
     }
 
     /**
@@ -64,6 +64,10 @@ class StudentController extends Controller
     }
     public function studentsByJamat()
     {
-       return view('admin.students.students_by_jamat');
+        return view('admin.students.students-by-jamat');
+    }
+    public function admissionRegisterByJamat()
+    {
+        return view('admin.students.admission-register-by-jamat');
     }
 }
