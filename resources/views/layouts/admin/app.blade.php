@@ -40,6 +40,9 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/bootstrap/bootstrap.min.css') }}">
 
+        <!-- Data Table css-->
+    <link href="../assets/vendor/datatable/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+    
     <!-- Simplebar css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/simplebar/simplebar.css') }}">
 
@@ -60,9 +63,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- jQuery UI CDN -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    
-    
-    
+
+
+
     <!-- Specific Styles  -->
     @stack('styles')
 </head>
@@ -139,10 +142,16 @@
     <script src="{{ asset('assets/js/script.js') }}"></script>
     <!-- jQuery UI CDN -->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <!-- data table js-->
+    <script src="../assets/js/data_table.js"></script>
+
+    <!-- table-js  -->
+    <script src="../assets/js/table.js"></script>
 
 
 
-    
+
+
     <!--Specific Scripts  -->
     @stack('scripts')
 
