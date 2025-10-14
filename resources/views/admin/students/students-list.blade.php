@@ -1,6 +1,6 @@
 @extends('layouts.admin.app')
 
-@section('title', 'ছাত্র/ছাত্রী লিস্ট      ')
+@section('title', 'ছাত্র/ছাত্রী লিস্ট')
 
 @section('content')
 
