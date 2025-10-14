@@ -82,5 +82,9 @@ class StudentController extends Controller
     {
         return view('admin.students.parents-number-by-jamat');
     }
+    public function studentsDepositEntrySystem()
+    {
+        return view('admin.students.students-deposit-entry-system');
+    }
 
 }

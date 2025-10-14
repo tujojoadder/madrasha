@@ -48,3 +48,6 @@ Route::get('/students-list-by-bloodgroup', [StudentController::class, 'studentsL
 // parents-number-by-jamat
 Route::get('parents-number-by-jamat', [StudentController::class, 'parentsNumberByJamat'])
     ->name('parents-number-by-jamat');
+// students-deposit-entry-system
+Route::get('students-deposit-entry-system', [StudentController::class, 'studentsDepositEntrySystem'])
+    ->name('students-deposit-entry-system');
