@@ -1,6 +1,6 @@
 @extends('layouts.admin.app')
 @section('title', 'জামাত অনুযায়ী অভিভাবকের মোবাইল নাম্বার')
-s
+
 @push('styles')
     <style>
         /* Print Styles */
