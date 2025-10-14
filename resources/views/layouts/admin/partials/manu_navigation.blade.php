@@ -92,7 +92,7 @@
                       <li><a href="{{ route('create-student') }}">ছাত্র/ছাত্রী তৈরি</a></li>
                       <li><a href="{{ route('student-list') }}">ছাত্র/ছাত্রী লিস্ট</a></li>
                       <li><a href="{{ route('students.by.jamaat') }}">জামাত অনুসারে ছাত্র/ছাত্রী </a></li>
-                      <li><a href="">জামাত অনুসারে ভর্তি প্রতিবেদন</a></li>
+                      <li><a href="{{ route('admission-report-by-jamat') }}">জামাত অনুসারে ভর্তি প্রতিবেদন</a></li>
                       <li><a href="{{ route('admission-register-by-jamat') }}">জামাত অনুসারে ভর্তি রেজিষ্টার</a></li>
                       <li><a href="chat.html">রক্তের গ্রুপ অনুসারে ছাত্র/ছাত্রী </a></li>
                       <li><a href="file_manager.html">জামাত অনুযায়ী অভিভাবকের মোবাঃ নাম্বার</a></li>

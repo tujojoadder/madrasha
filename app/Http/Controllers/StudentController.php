@@ -70,4 +70,8 @@ class StudentController extends Controller
     {
         return view('admin.students.admission-register-by-jamat');
     }
+    public function admissionReportByJamat()
+    {
+        return view('admin.students.admission-report-by-jamat');
+    }
 }

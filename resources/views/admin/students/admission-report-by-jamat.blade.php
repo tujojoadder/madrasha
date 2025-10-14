@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
-@section('title', 'জামাত অনুসারে ভর্তি রেজিষ্টার')
+@section('title', 'জামাত অনুসারে ভর্তি প্রতিবেদন')
 
 @push('styles')
     <style>
@@ -16,7 +16,8 @@
             #printContent * {
                 visibility: visible;
             }
-           /* every text will be black */
+
+            /* every text will be black */
             * {
                 color: #000 !important;
             }
@@ -180,45 +181,19 @@
     <div>
         <ol class="breadcrumb bg-light-secondary p-2">
             <li class="breadcrumb-item"><i class="fa-solid fa-users me-2"></i>ছাত্র/ছাত্রী</li>
-            <li aria-current="page" class="breadcrumb-item active fw-bold">জামাত অনুসারে ভর্তি রেজিষ্টার</li>
+            <li aria-current="page" class="breadcrumb-item active fw-bold">জামাত অনুসারে ভর্তি প্রতিবেদন</li>
         </ol>
     </div>
 
-    <div class="card shadow-sm mb-4">
-        <div class="card-header bg-primary">
-            <h5 class="mb-0 text-white">
-                <i class="fa-solid fa-users me-2"></i> জামাত অনুসারে ভর্তি রেজিষ্টার
-            </h5>
-        </div>
 
-        <div class="card-body mb-3">
-            <div class="row  align-items-end ">
-                <!-- Left: Select + Search button -->
-                <div class="col-md-6 d-flex flex-wrap gap-2 ">
-                    <form method="GET" class="d-flex flex-wrap align-items-end gap-3 w-100">
-                        <div class="flex-grow-1 ">
-                            <label for="class_select" class="form-label fw-bold">জামাত লিস্ট</label>
-                            <select name="class_id" id="class_select" class="form-select" required>
-                                <option value="">হেফখানা</option>
-                                <option value="1">নাজেরা</option>
-                                <option value="2">মক্তব</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn b-r-22 btn-info px-4 flex-shrink-0">
-                            দেখুন
-                        </button>
-                    </form>
-                </div>
 
-                <!-- Right: Add Student button -->
-                <div class="col-md-6 text-md-end text-start mt-3">
-                    <a href="{{ route('create-student') }}" class="btn btn-danger text-white fw-bold">
-                        <i class="fa-solid fa-plus me-1"></i> নতুন ছাত্র/ছাত্রী যুক্ত করুন
-                    </a>
-                </div>
-            </div>
-        </div>
+    <!-- Right: Add Student button -->
+    <div class=" text-md-end text-start my-3 ">
+        <a href="{{ route('create-student') }}" class="btn btn-danger text-white fw-bold">
+            <i class="fa-solid fa-plus me-1"></i> নতুন ছাত্র/ছাত্রী যুক্ত করুন
+        </a>
     </div>
+
     {{-- card --}}
     <div class="card border-0 shadow-sm mb-4" id="printContent">
         <div class="card-body py-4">
@@ -231,7 +206,7 @@
                 <div class="col-md-8 text-center">
                     <h3 class="mb-2 fw-bold">জামালুল কুরআন মাদরাসা</h3>
                     <p class="mb-1">৭৭, সগীষ সরকার রোড, শেখেরিয়া, ঢাকা-১২০৪, ফোনঃ ৪৭৪৪০২৯৬</p>
-                    <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">ছাত্র ভর্তি রেজিস্টার</h5>
+                    <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">এক নজরে ছাত্র ভর্তি প্ৰতিবেদন</h5>
                 </div>
                 <div class="col-md-2 text-end">
                     <p class="mb-0 fw-semibold">সন ২০২৫ ইং</p>
@@ -243,36 +218,53 @@
         <div class="table-responsive">
             <table class="table table-bordered table-striped align-middle mb-0 print-table">
                 <thead class="bg-primary print-thead">
+
                     <tr class="text-center">
                         <th>নং</th>
-                        <th>ছাত্রের নাম</th>
-                        <th>ভর্তি নং</th>
-                        <th>ফরম নং</th>
+                        <th>জামাতের নাম</th>
                         <th>নিজ খোরাকি</th>
-                        <th>হাফ ফি</th>
-                        <th>ফুল ফি</th>
+                        <th>হাফ ফ্রি</th>
+                        <th>ফুল ফ্রি</th>
                         <th>আবাসিক</th>
                         <th>অনাবাসিক</th>
-                        <th>খোরাকির হার</th>
-                        <th>আদায়</th>
+                        <th>মোট</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @for ($i = 1; $i <= 50; $i++)
-                        <tr>
-                            <td class="text-center">{{ $i }}</td>
-                            <td>ছাত্র নাম {{ $i }}</td>
-                            <td class="text-center">{{ rand(50003, 2222000) }}</td>
-                            <td class="text-center">{{ rand(50003, 2222000) }}</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">হ্যাঁ</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">{{ rand(50003, 2222000) }}</td>
-                            <td>{{ rand(5002, 2222000) }}</td>
-                        </tr>
-                    @endfor
+                    {{-- হেফখানা --}}
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td>হেফখানা</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">3</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">3</td>
+                    </tr>
+                    {{-- নাজেরা --}}
+                    <tr>
+                        <td class="text-center">2</td>
+                        <td>নাজেরা</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">2</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">2</td>
+                    </tr>
+                    {{-- মক্তব --}}
+                    <tr>
+                        <td class="text-center">3</td>
+                        <td>হেফখানা</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">3</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">0</td>
+                    </tr>
+
                 </tbody>
             </table>
         </div>
