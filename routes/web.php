@@ -37,3 +37,6 @@ Route::get('/students-by-jamat',[StudentController::class,'studentsByJamat'])->n
 Route::get('/admission-report-by-jamat', [StudentController::class, 'admissionReportByJamat'])->name('admission-report-by-jamat');
 // admission-register-by-jamat
 Route::get('/admission-register-by-jamat', [StudentController::class, 'admissionRegisterByJamat'])->name('admission-register-by-jamat');
+// students-list-by-bloodgroup
+Route::get('/students-list-by-bloodgroup', [StudentController::class, 'studentsListByBloodGroup'])
+    ->name('students-list-by-bloodgroup');

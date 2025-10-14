@@ -94,7 +94,7 @@
                       <li><a href="{{ route('students.by.jamaat') }}">জামাত অনুসারে ছাত্র/ছাত্রী </a></li>
                       <li><a href="{{ route('admission-report-by-jamat') }}">জামাত অনুসারে ভর্তি প্রতিবেদন</a></li>
                       <li><a href="{{ route('admission-register-by-jamat') }}">জামাত অনুসারে ভর্তি রেজিষ্টার</a></li>
-                      <li><a href="chat.html">রক্তের গ্রুপ অনুসারে ছাত্র/ছাত্রী </a></li>
+                      <li><a href="{{ route('students-list-by-bloodgroup') }}">রক্তের গ্রুপ অনুসারে ছাত্র/ছাত্রী</a></li>
                       <li><a href="file_manager.html">জামাত অনুযায়ী অভিভাবকের মোবাঃ নাম্বার</a></li>
                       <li><a href="bookmark.html">ছাত্র খানার টাকা জমার এন্ট্রি সিস্টেম</a></li>
                       <li><a href="kanban_board.html">ছাত্র খানার টাকা জমার তালিকা</a></li>

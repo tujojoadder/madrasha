@@ -278,7 +278,7 @@
         </div>
 
         {{-- Print Button --}}
-        <div class="m-3 d-flex justify-content-end no-print">
+        <div classs="m-3 d-flex justify-content-end no-print">
             <button class="btn btn-primary fw-bold" onclick="printDocument()">
                 <i class="fa-solid fa-print me-2"></i> প্রিন্ট করুন
             </button>
