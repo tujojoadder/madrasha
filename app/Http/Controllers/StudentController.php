@@ -78,4 +78,9 @@ class StudentController extends Controller
     {
         return view('admin.students.students-list-by-bloodgroup');
     }
+    public function parentsNumberByJamat()
+    {
+        return view('admin.students.parents-number-by-jamat');
+    }
+
 }

@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
-@section('title', 'জামাত অনুসারে ভর্তি রেজিষ্টার')
+@section('title', 'জামাত অনুযায়ী অভিভাবকের মোবাইল নাম্বার')
 
 @push('styles')
     <style>
@@ -180,14 +180,14 @@
     <div>
         <ol class="breadcrumb bg-light-secondary p-2">
             <li class="breadcrumb-item"><i class="fa-solid fa-users me-2"></i>ছাত্র/ছাত্রী</li>
-            <li aria-current="page" class="breadcrumb-item active fw-bold">জামাত অনুসারে ভর্তি রেজিষ্টার</li>
+            <li aria-current="page" class="breadcrumb-item active fw-bold">জামাত অনুযায়ী অভিভাবকের মোবাইল নাম্বার</li>
         </ol>
     </div>
 
     <div class="card shadow-sm mb-4">
         <div class="card-header bg-primary">
             <h5 class="mb-0 text-white">
-                <i class="fa-solid fa-users me-2"></i> জামাত অনুসারে ভর্তি রেজিষ্টার
+                <i class="fa-solid fa-users me-2"></i> জামাত অনুযায়ী অভিভাবকের মোবাইল নাম্বারর
             </h5>
         </div>
 
@@ -231,7 +231,7 @@
                 <div class="col-md-8 text-center">
                     <h3 class="mb-2 fw-bold">জামালুল কুরআন মাদরাসা</h3>
                     <p class="mb-1">৭৭, সগীষ সরকার রোড, শেখেরিয়া, ঢাকা-১২০৪, ফোনঃ ৪৭৪৪০২৯৬</p>
-                    <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">ছাত্র ভর্তি রেজিস্টার</h5>
+                    <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">জামাত অনুযায়ী অভিভাবকের মোবাইল নাম্বার</h5>
                 </div>
                 <div class="col-md-2 text-end">
                     <p class="mb-0 fw-semibold">সন ২০২৫ ইং</p>
@@ -241,20 +241,15 @@
 
         {{-- Table Section --}}
         <div class="table-responsive">
-            <table class="table table-bordered table-striped align-middle mb-0 print-table">
+            <table class="table table-bordered  table-striped align-middle mb-0 print-table">
                 <thead class="bg-primary print-thead">
+
                     <tr class="text-center">
-                        <th>নং</th>
+                        <th>ক্রমিক নং</th>
                         <th>ছাত্রের নাম</th>
-                        <th>ভর্তি নং</th>
-                        <th>ফরম নং</th>
-                        <th>নিজ খোরাকি</th>
-                        <th>হাফ ফি</th>
-                        <th>ফুল ফি</th>
-                        <th>আবাসিক</th>
-                        <th>অনাবাসিক</th>
-                        <th>খোরাকির হার</th>
-                        <th>আদায়</th>
+                        <th>অভিভাবক</th>
+                        <th>মোবাইল</th>
+                        <th>সম্পর্ক</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -262,15 +257,9 @@
                         <tr>
                             <td class="text-center">{{ $i }}</td>
                             <td>ছাত্র নাম {{ $i }}</td>
-                            <td class="text-center">{{ rand(50003, 2222000) }}</td>
-                            <td class="text-center">{{ rand(50003, 2222000) }}</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">হ্যাঁ</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">{{ rand(50003, 2222000) }}</td>
-                            <td>{{ rand(5002, 2222000) }}</td>
+                            <td class="text-center">অভিভাবক {{ $i }}</td>
+                            <td class="text-center">017{{ rand(11111111, 99999999) }}</td>
+                            <td class="text-center"></td>
                         </tr>
                     @endfor
                 </tbody>
