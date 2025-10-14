@@ -21,24 +21,24 @@
                 <div class="row  align-items-end ">
                     <div class="col-md-8 d-flex flex-wrap gap-3 align-items-end ">
                         <div class="flex-grow-1">
-    <label for="class_select" class="form-label fw-bold">জামাত লিস্ট</label>
-    <select name="class_id" id="class_select" class="form-select" required>
-        <option value="" selected disabled>জামাত নির্বাচন করুন</option>
-        <option value="1">হেফখানা</option>
-        <option value="2">নাজেরা</option>
-        <option value="3">মক্তব</option>
-    </select>
-</div>
+                            <label for="class_select" class="form-label fw-bold">জামাত লিস্ট</label>
+                            <select name="class_id" id="class_select" class="form-select" required>
+                                <option value="" selected disabled>জামাত নির্বাচন করুন</option>
+                                <option value="1">হেফখানা</option>
+                                <option value="2">নাজেরা</option>
+                                <option value="3">মক্তব</option>
+                            </select>
+                        </div>
 
-<div class="flex-grow-1">
-    <label for="name_select" class="form-label fw-bold">ছাত্র-ছাত্রীর নাম</label>
-    <select name="student_id" id="name_select" class="form-select" required>
-        <option value="" selected disabled>ছাত্র/ছাত্রী নির্বাচন করুন</option>
-        <option value="1">রহিম</option>
-        <option value="2">করিম</option>
-        <option value="3">সাকিব</option>
-    </select>
-</div>
+                        <div class="flex-grow-1">
+                            <label for="name_select" class="form-label fw-bold">ছাত্র-ছাত্রীর নাম</label>
+                            <select name="student_id" id="name_select" class="form-select" required>
+                                <option value="" selected disabled>ছাত্র/ছাত্রী নির্বাচন করুন</option>
+                                <option value="1">রহিম</option>
+                                <option value="2">করিম</option>
+                                <option value="3">সাকিব</option>
+                            </select>
+                        </div>
 
                         <!-- সাবমিট বাটন -->
                         <button type="submit" class="btn b-r-22 btn-info px-4 flex-shrink-0">
@@ -89,7 +89,8 @@
                         <tr>
                             <td>জানু</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" value="10">
@@ -110,7 +111,8 @@
                         <tr>
                             <td>ফেব্রু</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" value="10">
@@ -131,7 +133,8 @@
                         <tr>
                             <td>মার্চ</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="বই নং লিখুন">
@@ -152,7 +155,8 @@
                         <tr>
                             <td>এপ্রিল</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="বই নং লিখুন">
@@ -161,7 +165,8 @@
                                 <input type="text" class="form-control form-control-sm" placeholder="রশিদ নং লিখুন">
                             </td>
                             <td>
-                                <input type="text" class="form-control form-control-sm" placeholder="টাকা পরিমান লিখুন">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="টাকা পরিমান লিখুন">
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="গ্রহণকারী লিখুন">
@@ -173,7 +178,8 @@
                         <tr>
                             <td>মে</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="09 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="09 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="বই নং লিখুন">
@@ -182,7 +188,8 @@
                                 <input type="text" class="form-control form-control-sm" placeholder="রশিদ নং লিখুন">
                             </td>
                             <td>
-                                <input type="text" class="form-control form-control-sm" placeholder="টাকা পরিমান লিখুন">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="টাকা পরিমান লিখুন">
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="গ্রহণকারী লিখুন">
@@ -194,7 +201,8 @@
                         <tr>
                             <td>জুন</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="বই নং লিখুন">
@@ -203,7 +211,8 @@
                                 <input type="text" class="form-control form-control-sm" placeholder="রশিদ নং লিখুন">
                             </td>
                             <td>
-                                <input type="text" class="form-control form-control-sm" placeholder="টাকা পরিমান লিখুন">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="টাকা পরিমান লিখুন">
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="গ্রহণকারী লিখুন">
@@ -215,7 +224,8 @@
                         <tr>
                             <td>জুলাই</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="বই নং লিখুন">
@@ -224,7 +234,8 @@
                                 <input type="text" class="form-control form-control-sm" placeholder="রশিদ নং লিখুন">
                             </td>
                             <td>
-                                <input type="text" class="form-control form-control-sm" placeholder="টাকা পরিমান লিখুন">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="টাকা পরিমান লিখুন">
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="গ্রহণকারী লিখুন">
@@ -236,7 +247,8 @@
                         <tr>
                             <td>আগস্ট</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="বই নং লিখুন">
@@ -245,7 +257,8 @@
                                 <input type="text" class="form-control form-control-sm" placeholder="রশিদ নং লিখুন">
                             </td>
                             <td>
-                                <input type="text" class="form-control form-control-sm" placeholder="টাকা পরিমান লিখুন">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="টাকা পরিমান লিখুন">
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="গ্রহণকারী লিখুন">
@@ -257,7 +270,8 @@
                         <tr>
                             <td>সেপ্টেম্বর</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="বই নং লিখুন">
@@ -266,7 +280,8 @@
                                 <input type="text" class="form-control form-control-sm" placeholder="রশিদ নং লিখুন">
                             </td>
                             <td>
-                                <input type="text" class="form-control form-control-sm" placeholder="টাকা পরিমান লিখুন">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="টাকা পরিমান লিখুন">
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="গ্রহণকারী লিখুন">
@@ -278,7 +293,8 @@
                         <tr>
                             <td>অক্টোবর</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="বই নং লিখুন">
@@ -287,7 +303,8 @@
                                 <input type="text" class="form-control form-control-sm" placeholder="রশিদ নং লিখুন">
                             </td>
                             <td>
-                                <input type="text" class="form-control form-control-sm" placeholder="টাকা পরিমান লিখুন">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="টাকা পরিমান লিখুন">
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="গ্রহণকারী লিখুন">
@@ -299,7 +316,8 @@
                         <tr>
                             <td>নভেম্বর</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="বই নং লিখুন">
@@ -308,7 +326,8 @@
                                 <input type="text" class="form-control form-control-sm" placeholder="রশিদ নং লিখুন">
                             </td>
                             <td>
-                                <input type="text" class="form-control form-control-sm" placeholder="টাকা পরিমান লিখুন">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="টাকা পরিমান লিখুন">
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="গ্রহণকারী লিখুন">
@@ -320,7 +339,8 @@
                         <tr>
                             <td>ডিসেম্বর</td>
                             <td>
-                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025" readonly>
+                                <input type="text" class="form-control form-control-sm datepicker" value="15 Apr 2025"
+                                    readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="বই নং লিখুন">
@@ -329,7 +349,8 @@
                                 <input type="text" class="form-control form-control-sm" placeholder="রশিদ নং লিখুন">
                             </td>
                             <td>
-                                <input type="text" class="form-control form-control-sm" placeholder="টাকা পরিমান লিখুন">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="টাকা পরিমান লিখুন">
                             </td>
                             <td>
                                 <input type="text" class="form-control form-control-sm" placeholder="গ্রহণকারী লিখুন">
@@ -344,10 +365,8 @@
 
             <div class="m-3 text-end">
                 <button type="submit" class="btn btn-success">
-    <i class="fa-solid fa-circle-check me-1"></i><strong>যুক্ত করুন</strong>
-</button>
-
-
+                    <i class="fa-solid fa-circle-check me-1"></i><strong>যুক্ত করুন</strong>
+                </button>
             </div>
         </div>
     </div>

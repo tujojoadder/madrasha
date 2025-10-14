@@ -1,6 +1,6 @@
 @extends('layouts.admin.app')
 @section('title', 'জামাত অনুযায়ী অভিভাবকের মোবাইল নাম্বার')
-
+s
 @push('styles')
     <style>
         /* Print Styles */
@@ -240,7 +240,7 @@
         </div>
 
         {{-- Table Section --}}
-        <div class="table-responsive">
+        <div class="table-responsive mx-3">
             <table class="table table-bordered  table-striped align-middle mb-0 print-table">
                 <thead class="bg-primary print-thead">
 

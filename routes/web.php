@@ -51,3 +51,6 @@ Route::get('parents-number-by-jamat', [StudentController::class, 'parentsNumberB
 // students-deposit-entry-system
 Route::get('students-deposit-entry-system', [StudentController::class, 'studentsDepositEntrySystem'])
     ->name('students-deposit-entry-system');
+// students-deposit-list
+Route::get('students-deposit-list', [StudentController::class, 'studentsDepositList'])
+    ->name('students-deposit-list');

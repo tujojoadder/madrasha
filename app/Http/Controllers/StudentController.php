@@ -86,5 +86,9 @@ class StudentController extends Controller
     {
         return view('admin.students.students-deposit-entry-system');
     }
+    public function studentsDepositList()
+    {
+        return view('admin.students.students-deposit-list');
+    }
 
 }
