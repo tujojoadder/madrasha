@@ -94,5 +94,9 @@ class StudentController extends Controller
     {
         return view('admin.students.students-deposit-register');
     }
+    public function admissionForm()
+    {
+        return view('admin.students.admission-form');
+    }
 
 }

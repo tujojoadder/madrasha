@@ -216,7 +216,7 @@
 
         {{-- Table Section --}}
         <div class="table-responsive card-body">
-            <table class="table table-bordered table-striped align-middle mb-0 print-table">
+            <table class="table table-bordered table-striped align-middle mb-0 print-table text-center">
                 <thead class="bg-primary print-thead">
 
                     <tr class="text-center">

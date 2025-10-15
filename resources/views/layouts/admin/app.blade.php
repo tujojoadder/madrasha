@@ -40,9 +40,9 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/bootstrap/bootstrap.min.css') }}">
 
-        <!-- Data Table css-->
+    <!-- Data Table css-->
     <link href="../assets/vendor/datatable/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-    
+
     <!-- Simplebar css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/simplebar/simplebar.css') }}">
 
@@ -64,6 +64,18 @@
     <!-- jQuery UI CDN -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
+    <style>
+        @font-face {
+            font-family: 'SolaimanLipi';
+            src: url('/fonts/SolaimanLipi.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+        }
+    </style>
 
 
     <!-- Specific Styles  -->
