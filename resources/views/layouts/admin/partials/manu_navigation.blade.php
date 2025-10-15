@@ -1,7 +1,7 @@
   <nav>
       <div class="app-logo">
           <a class="logo d-inline-block" href="index.html">
-              <img alt="#" src="../assets/images/logo/1.png">
+              <img alt="#" src="../assets/images/logo/madrasha-logo.png">
           </a>
 
           <span class="bg-light-primary toggle-semi-nav d-flex-center">

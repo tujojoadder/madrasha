@@ -58,5 +58,5 @@ Route::get('students-deposit-list', [StudentController::class, 'studentsDepositL
 Route::get('students-deposit-register', [StudentController::class, 'studentsDepositRegister'])
     ->name('students-deposit-register');
 // admission-form
-Route::get('admission-form', [StudentController::class, 's'])
+Route::get('admission-form', [StudentController::class, 'admissionForm'])
     ->name('admission-form');

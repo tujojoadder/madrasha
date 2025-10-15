@@ -86,9 +86,9 @@
     <div class="app-wrapper " style="box-shadow: none">
 
         {{-- loader --}}
-        <div class="loader-wrapper">
+     {{--    <div class="loader-wrapper">
             <div class="loader_24"></div>
-        </div>
+        </div> --}}
 
         {{-- manu bar --}}
         @include('layouts.admin.partials.manu_navigation')
