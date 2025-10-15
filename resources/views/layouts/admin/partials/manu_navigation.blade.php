@@ -1,6 +1,6 @@
   <nav>
       <div class="app-logo">
-          <a class="logo d-inline-block" href="index.html">
+          <a class="logo d-inline-block" href="/dashboard">
               <img alt="#" src="../assets/images/logo/madrasha-logo.png">
           </a>
 

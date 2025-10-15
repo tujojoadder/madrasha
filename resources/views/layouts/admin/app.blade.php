@@ -86,7 +86,7 @@
     <div class="app-wrapper " style="box-shadow: none">
 
         {{-- loader --}}
-     {{--    <div class="loader-wrapper">
+        {{--    <div class="loader-wrapper">
             <div class="loader_24"></div>
         </div> --}}
 
@@ -157,12 +157,29 @@
     <!-- data table js-->
     <script src="../assets/js/data_table.js"></script>
 
-    <!-- table-js  -->
-    <script src="../assets/js/table.js"></script>
+    <!-- table-js -->
+    <script src="{{ asset('assets/js/table.js') }}"></script>
 
+    <!-- chartjs js -->
+    <script src="{{ asset('assets/vendor/chartjs/chart.js') }}"></script>
 
+    <!-- Customizer js -->
+    <script src="{{ asset('assets/js/customizer.js') }}"></script>
 
+    <!-- chart js -->
+    <script src="{{ asset('assets/js/chart.js') }}"></script>
 
+    <!-- js -->
+    <script src="{{ asset('assets/js/widget.js') }}"></script>
+
+    <!-- pie chart js -->
+    <script src="{{ asset('assets/js/pie_charts.js') }}"></script>
+
+    {{-- js  --}}
+    <script src="{{ asset('assets/js/area_charts.js') }}"></script>
+
+    <!-- js-->
+    <script src="{{ asset('assets/js/mixed.js') }}"></script>
 
     <!--Specific Scripts  -->
     @stack('scripts')

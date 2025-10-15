@@ -10,6 +10,7 @@
         </ol>
     </div>
     <div class="row mt-4">
+        {{-- manu section --}}
         <div class="col-12">
             <!-- Dashboard Header -->
 
@@ -256,6 +257,49 @@
                             <div class="card-pattern-overlay"></div>
                         </div>
                     </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row pt-5">
+        {{-- chart section --}}
+
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5> Patterned Donut Chart</h5>
+                </div>
+                <div class="card-body">
+                    <div id="chart4"></div>
+                </div>
+            </div>
+        </div>
+
+
+        {{-- chart --}}
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Basic Area Chart</h5>
+                </div>
+                <div class="card-body">
+                    <div id="area-basic-chart"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Line & Column Chart start -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5> Line & Column Chart</h5>
+                </div>
+                <div class="card-body">
+                    <div id="mixed1"></div>
                 </div>
             </div>
         </div>
