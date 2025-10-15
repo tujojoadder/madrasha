@@ -98,7 +98,7 @@
                       <li><a href="{{ route('parents-number-by-jamat') }}">জামাত অনুযায়ী অভিভাবকের মোবাঃ নাম্বার</a></li>
                       <li><a href="{{ route('students-deposit-entry-system') }}">ছাত্র খানার টাকা জমার এন্ট্রি সিস্টেম</a></li>
                       <li><a href="{{ route('students-deposit-list') }}">ছাত্র খানার টাকা জমার তালিকা</a></li>
-                      <li><a href="timeline.html">ছাত্রদের খোরাকীর টাকা আদায়ের রেজিস্টার</a></li>
+                      <li><a href="{{ route('students-deposit-register') }}">ছাত্রদের খোরাকীর টাকা আদায়ের রেজিস্টার</a></li>
                       <li><a href="faq.html">ভর্তি ফর্ম</a></li>
                   </ul>
               </li>

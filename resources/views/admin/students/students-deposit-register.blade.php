@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
-@section('title', 'জামাত অনুসারে ভর্তি প্রতিবেদন')
+@section('title', 'ছাত্রদের খোরাকীর টাকা আদায়ের রেজিস্টার')
 
 @push('styles')
     <style>
@@ -181,7 +181,7 @@
     <div>
         <ol class="breadcrumb bg-light-secondary p-2">
             <li class="breadcrumb-item"><i class="fa-solid fa-users me-2"></i>ছাত্র/ছাত্রী</li>
-            <li aria-current="page" class="breadcrumb-item active fw-bold">জামাত অনুসারে ভর্তি প্রতিবেদন</li>
+            <li aria-current="page" class="breadcrumb-item active fw-bold">ছাত্রদের খোরাকীর টাকা আদায়ের রেজিস্টার</li>
         </ol>
     </div>
 
@@ -206,7 +206,7 @@
                 <div class="col-md-8 text-center">
                     <h3 class="mb-2 fw-bold">জামালুল কুরআন মাদরাসা</h3>
                     <p class="mb-1">৭৭, সগীষ সরকার রোড, শেখেরিয়া, ঢাকা-১২০৪, ফোনঃ ৪৭৪৪০২৯৬</p>
-                    <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">এক নজরে ছাত্র ভর্তি প্ৰতিবেদন</h5>
+                    <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">ছাত্রদের খোরাকীর টাকা আদায়ের রেজিস্টার</h5>
                 </div>
                 <div class="col-md-2 text-end">
                     <p class="mb-0 fw-semibold">সন ২০২৫ ইং</p>
@@ -216,53 +216,72 @@
 
         {{-- Table Section --}}
         <div class="table-responsive card-body">
-            <table class="table table-bordered table-striped align-middle mb-0 print-table">
+            <table class="table table-bordered table-striped align-middle mb-0 print-table text-center">
                 <thead class="bg-primary print-thead">
 
                     <tr class="text-center">
-                        <th>নং</th>
-                        <th>জামাতের নাম</th>
-                        <th>নিজ খোরাকি</th>
-                        <th>হাফ ফ্রি</th>
-                        <th>ফুল ফ্রি</th>
-                        <th>আবাসিক</th>
-                        <th>অনাবাসিক</th>
-                        <th>মোট</th>
+                        <th>ক্রমিক নং</th>
+                        <th>ছাত্রের নাম</th>
+                        <th>ভর্তি নং</th>
+                        <th>খোরাকীর হার</th>
+                        <th>আবাসিক / অনাবাসিক</th>
+                        <th>জানুয়ারী</th>
+                        <th>ফেব্রুয়ারি</th>
+                        <th>মার্চ</th>
+                        <th>এপ্রিল</th>
+                        <th>মে</th>
+                        <th>জুন</th>
+                        <th>জুলাই</th>
+                        <th>আগস্ট</th>
+                        <th>সেপ্টেম্বর</th>
+                        <th>অক্টোবর</th>
+                        <th>নভেম্বর</th>
+                        <th>ডিসেম্বর</th>
+                        <th>মন্তব্য</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {{-- হেফখানা --}}
+                    {{-- student 1 --}}
                     <tr>
-                        <td class="text-center">1</td>
-                        <td>হেফখানা</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">3</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">3</td>
+                        <td>1</td>
+                        <td>মোঃ রাকিব হাসান</td>
+                        <td>101</td>
+                        <td>500৳</td>
+                        <td>আবাসিক</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td></td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td></td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td></td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>সময়মতো পরিশোধ</td>
                     </tr>
-                    {{-- নাজেরা --}}
+                    {{-- student 2 --}}
                     <tr>
-                        <td class="text-center">2</td>
-                        <td>নাজেরা</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">2</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">2</td>
-                    </tr>
-                    {{-- মক্তব --}}
-                    <tr>
-                        <td class="text-center">3</td>
-                        <td>হেফখানা</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">3</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
+                        <td>2</td>
+                        <td>মোঃ সাইফুল ইসলাম</td>
+                        <td>102</td>
+                        <td>400৳</td>
+                        <td>অনাবাসিক</td>
+                        <td>400</td>
+                        <td></td>
+                        <td>400</td>
+                        <td>400</td>
+                        <td></td>
+                        <td></td>
+                        <td>400</td>
+                        <td>400</td>
+                        <td></td>
+                        <td>400</td>
+                        <td>400</td>
+                        <td></td>
+                        <td>জুলাই ও ডিসেম্বর বাকি</td>
                     </tr>
 
                 </tbody>
