@@ -229,9 +229,7 @@
                     <p class="mb-1">৭৭, সগীষ সরকার রোড, শেখেরিয়া, ঢাকা-১২০৪, ফোনঃ ৪৭৪৪০২৯৬</p>
                     <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">শিক্ষকগণের বেতন তালিকা</h5>
                 </div>
-
             </div>
-
 
             {{-- Table Section --}}
             <div class="table-responsive">
@@ -257,13 +255,16 @@
                     </tbody>
                 </table>
             </div>
+
+            {{-- Print Button --}}
+            <div class="m-3 d-flex justify-content-end no-print">
+                <button class="btn btn-primary fw-bold" onclick="printDocument()">
+                    <i class="fa-solid fa-print me-2"></i> প্রিন্ট করুন
+                </button>
+            </div>
+
         </div>
-        {{-- Print Button --}}
-        <div class="m-3 d-flex justify-content-end no-print">
-            <button class="btn btn-primary fw-bold" onclick="printDocument()">
-                <i class="fa-solid fa-print me-2"></i> প্রিন্ট করুন
-            </button>
-        </div>
+
     </div>
 
 @endsection
@@ -274,22 +275,17 @@
             window.print();
         }
         $(document).ready(function() {
-            // Initialize month/year picker
+
+            // Initialize end-date
             $("#end-date").datepicker({
-                dateFormat: "M yy", // Show short month + year
+                dateFormat: "d M yy", // e.g. 16 Oct 2025
                 changeMonth: true,
                 changeYear: true,
-                showButtonPanel: true, // Adds "Done" button
-                onClose: function(dateText, inst) {
-                    // Get selected month/year
-                    var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
-                    var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
-                    $(this).datepicker('setDate', new Date(year, month, 1));
-                }
+                showButtonPanel: true
             });
-
-            // Automatically set today's month/year
+            // Automatically set end-date
             $("#end-date").datepicker('setDate', new Date());
+
 
 
         });
