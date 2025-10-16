@@ -182,7 +182,7 @@
                         <!-- Row 6: Addresses (Full Width TextAreas) -->
                         <div class="row g-3 mb-3">
                             <div class="col-md-6">
-                                <label for="present_address" class="form-label fw-semibold">বর্তমান ঠিকানা</label>
+                                <label for="present_address" class="form-label fw-semibold">বর্তমান ঠিকানা</label>a
                                 <textarea name="present_address" id="present_address" class="form-control" rows="2"
                                     placeholder="শিক্ষকের বর্তমান ঠিকানা লিখুন"></textarea>
                             </div>

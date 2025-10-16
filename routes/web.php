@@ -67,3 +67,6 @@ Route::get('admission-form', [StudentController::class, 'admissionForm'])
 // create_teacher
 Route::get('create_teacher', [TeacherController::class, 'createTeacher'])
     ->name('create_teacher');
+// teachers-list
+Route::get('teachers-list', [TeacherController::class, 'teachersList'])
+    ->name('teachers-list');
