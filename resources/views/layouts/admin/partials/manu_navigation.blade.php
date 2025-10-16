@@ -84,7 +84,8 @@
               </li>
               <!-- ছাত্র/ছাত্রী -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#students" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#students"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-users me-2"></i>
                       ছাত্র/ছাত্রী
                   </a>
@@ -94,36 +95,42 @@
                       <li><a href="{{ route('students.by.jamaat') }}">জামাত অনুসারে ছাত্র/ছাত্রী </a></li>
                       <li><a href="{{ route('admission-report-by-jamat') }}">জামাত অনুসারে ভর্তি প্রতিবেদন</a></li>
                       <li><a href="{{ route('admission-register-by-jamat') }}">জামাত অনুসারে ভর্তি রেজিষ্টার</a></li>
-                      <li><a href="{{ route('students-list-by-bloodgroup') }}">রক্তের গ্রুপ অনুসারে ছাত্র/ছাত্রী</a></li>
-                      <li><a href="{{ route('parents-number-by-jamat') }}">জামাত অনুযায়ী অভিভাবকের মোবাঃ নাম্বার</a></li>
-                      <li><a href="{{ route('students-deposit-entry-system') }}">ছাত্র খানার টাকা জমার এন্ট্রি সিস্টেম</a></li>
+                      <li><a href="{{ route('students-list-by-bloodgroup') }}">রক্তের গ্রুপ অনুসারে ছাত্র/ছাত্রী</a>
+                      </li>
+                      <li><a href="{{ route('parents-number-by-jamat') }}">জামাত অনুযায়ী অভিভাবকের মোবাঃ নাম্বার</a>
+                      </li>
+                      <li><a href="{{ route('students-deposit-entry-system') }}">ছাত্র খানার টাকা জমার এন্ট্রি
+                              সিস্টেম</a></li>
                       <li><a href="{{ route('students-deposit-list') }}">ছাত্র খানার টাকা জমার তালিকা</a></li>
-                      <li><a href="{{ route('students-deposit-register') }}">ছাত্রদের খোরাকীর টাকা আদায়ের রেজিস্টার</a></li>
+                      <li><a href="{{ route('students-deposit-register') }}">ছাত্রদের খোরাকীর টাকা আদায়ের রেজিস্টার</a>
+                      </li>
                       <li><a href="{{ route('admission-form') }}">ভর্তি ফর্ম</a></li>
                   </ul>
               </li>
 
 
               <!-- শিক্ষক -->
-                <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#teachers" class="d-flex align-items-center fw-bold">
+              <li>
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#teachers"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-chalkboard-user me-2"></i>
                       শিক্ষক
                   </a>
                   <ul class="collapse" id="teachers">
-                      <li><a href="calendar.html">শিক্ষক তৈরি</a></li>
+                      <li><a href="{{ route('create_teacher') }}">শিক্ষক তৈরি</a></li>
                       <li><a href="to_do.html">শিক্ষক তালিকা</a></li>
                       <li><a href="team.html">শিক্ষকগণের মোবাইল নম্বর </a></li>
                       <li><a href="api.html">শিক্ষকগণের বেতন তালিকা</a></li>
                       <li><a href="api.html">শিক্ষকগণের নম্বর তালিকা</a></li>
 
                   </ul>
-                </li>
+              </li>
               <!-- মাসিক চাঁদাদাতা -->
               <li>
-                 
 
-                   <a aria-expanded="false" data-bs-toggle="collapse" href="#monthly-donors" class="d-flex align-items-center fw-bold">
+
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#monthly-donors"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-calendar-check me-2"></i>
                       মাসিক চাঁদাদাতা
                   </a>
@@ -136,9 +143,10 @@
               </li>
               <!-- দানকারী -->
               <li>
-                   <a aria-expanded="false" data-bs-toggle="collapse" href="#donors" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#donors"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-hand-holding-heart me-2"></i>
-                       দানকারী
+                      দানকারী
                   </a>
                   <ul class="collapse" id="donors">
                       <li><a href="calendar.html">দানকারীর তালিকা</a></li>
@@ -149,10 +157,11 @@
               </li>
               <!-- যাকাত দাতা -->
               <li>
-                
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#zakat-donors" class="d-flex align-items-center fw-bold">
+
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#zakat-donors"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-gem me-2"></i>
-                       যাকাত দাতা
+                      যাকাত দাতা
                   </a>
                   <ul class="collapse" id="zakat-donors">
                       <li><a href="calendar.html">যাকাত দাতার তালিকা</a></li>
@@ -169,14 +178,15 @@
                       <i class="fa-solid fa-users-gear"></i> কমিটির সদস্যগণ
                   </a>
               </li>
-              
+
               <!-- হাজিরা -->
               <li>
-                 <a aria-expanded="false" data-bs-toggle="collapse" href="#attendance" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#attendance"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-user-check me-2"></i>
                       হাজিরা
                   </a>
-                  
+
                   <ul class="collapse" id="attendance">
                       <li><a href="calendar.html">ছাত্র-ছাত্রী হাজিরা</a></li>
                       <li><a href="to_do.html">ছাত্র-ছাত্রী হাজিরা প্ৰতিবেদন </a></li>
@@ -186,7 +196,8 @@
               </li>
               <!-- রেজাল্ট -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#results" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#results"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-chart-line me-2"></i>
                       রেজাল্ট
                   </a>
@@ -198,7 +209,8 @@
               </li>
               <!-- জমা/খরচ হিসাব সমূহ -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#income-expense" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#income-expense"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-wallet me-2"></i>
                       জমা/খরচ হিসাব সমূহ
                   </a>
@@ -213,7 +225,8 @@
               </li>
               <!-- এস এম এস -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#sms" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#sms"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-message me-2"></i>
                       এস এম এস
                   </a>
@@ -229,7 +242,8 @@
               </li>
               <!-- ভাউচার -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#vouchers" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#vouchers"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-file-invoice-dollar me-2"></i>
                       ভাউচার
                   </a>
@@ -240,7 +254,8 @@
               </li>
               <!-- আইডি কার্ড -->
               <li>
-                    <a aria-expanded="false" data-bs-toggle="collapse" href="#id-cards" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#id-cards"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-id-card me-2"></i>
                       আইডি কার্ড
                   </a>
@@ -250,7 +265,8 @@
               </li>
               <!-- এ্যাকাউন্ট -->
               <li>
-                   <a aria-expanded="false" data-bs-toggle="collapse" href="#accounts" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#accounts"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-building-columns me-2"></i>
                       এ্যাকাউন্ট
                   </a>
@@ -261,7 +277,8 @@
               </li>
               <!-- রিপোর্ট -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#reports" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#reports"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-file-alt me-2"></i>
                       রিপোর্ট
                   </a>
@@ -281,14 +298,14 @@
               </li>
 
               <!-- দৈনিক আয়-ব্যয়ের প্রতিবেদন -->
-              
+
               <li class="no-sub">
                   <a href="/dashboard" class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-calendar-day me-2"></i> দৈনিক আয়-ব্যয়ের প্রতিবেদন
                   </a>
               </li>
               <!-- বার্ষিক আয়-ব্যয়ের প্রতিবেদন -->
-              
+
               <li class="no-sub">
                   <a href="/dashboard" class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-calendar-week me-2"></i> বার্ষিক আয়-ব্যয়ের প্রতিবেদন
@@ -302,7 +319,8 @@
               </li>
               <!-- সেটিং -->
               <li>
-                  <a aria-expanded="false" data-bs-toggle="collapse" href="#settings" class="d-flex align-items-center fw-bold">
+                  <a aria-expanded="false" data-bs-toggle="collapse" href="#settings"
+                      class="d-flex align-items-center fw-bold">
                       <i class="fa-solid fa-gear me-2"></i>
                       সেটিং
                   </a>

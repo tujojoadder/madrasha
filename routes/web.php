@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -60,3 +61,9 @@ Route::get('students-deposit-register', [StudentController::class, 'studentsDepo
 // admission-form
 Route::get('admission-form', [StudentController::class, 'admissionForm'])
     ->name('admission-form');
+
+/* teachers */
+
+// create_teacher
+Route::get('create_teacher', [TeacherController::class, 'createTeacher'])
+    ->name('create_teacher');
