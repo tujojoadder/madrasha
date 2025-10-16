@@ -197,8 +197,8 @@
 
 
 
-    <!-- Right: Add Student button -->
-    <div class=" text-md-end text-start my-3 ">
+    <!-- Right: Add Teacher button -->
+    <div class=" text-md-end text-start  m-3 mx-4">
         <a href="{{ route('create_teacher') }}" class="btn btn-danger text-white fw-bold">
             <i class="fa-solid fa-plus me-1"></i> নতুন শিক্ষক যুক্ত করুন
         </a>

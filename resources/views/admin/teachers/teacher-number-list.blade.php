@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
-@section('title', 'জামাত অনুসারে ভর্তি প্রতিবেদন')
+@section('title', 'শিক্ষকগণের মোবাইল নম্বর')
 
 @push('styles')
     <style>
@@ -180,17 +180,17 @@
 
     <div>
         <ol class="breadcrumb bg-light-secondary p-2">
-            <li class="breadcrumb-item"><i class="fa-solid fa-users me-2"></i>ছাত্র/ছাত্রী</li>
-            <li aria-current="page" class="breadcrumb-item active fw-bold">জামাত অনুসারে ভর্তি প্রতিবেদন</li>
+            <li class="breadcrumb-item"><i class="fa-solid fa-chalkboard-user me-2"></i>শিক্ষক</li>
+            <li aria-current="page" class="breadcrumb-item active fw-bold">শিক্ষকগণের মোবাইল নম্বর</li>
         </ol>
     </div>
 
 
 
-    <!-- Right: Add Student button -->
+ <!-- Right: Add Teacher button -->
     <div class=" text-md-end text-start m-3 mx-4 ">
-        <a href="{{ route('create-student') }}" class="btn btn-danger text-white fw-bold">
-            <i class="fa-solid fa-plus me-1"></i> নতুন ছাত্র/ছাত্রী যুক্ত করুন
+        <a href="{{ route('create_teacher') }}" class="btn btn-danger text-white fw-bold">
+            <i class="fa-solid fa-plus me-1"></i> নতুন শিক্ষক যুক্ত করুন
         </a>
     </div>
 
@@ -206,11 +206,9 @@
                 <div class="col-md-8 text-center">
                     <h3 class="mb-2 fw-bold">জামালুল কুরআন মাদরাসা</h3>
                     <p class="mb-1">৭৭, সগীষ সরকার রোড, শেখেরিয়া, ঢাকা-১২০৪, ফোনঃ ৪৭৪৪০২৯৬</p>
-                    <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">এক নজরে ছাত্র ভর্তি প্রতিবেদন</h5>
+                    <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">শিক্ষকগণের মোবাইল নম্বর</h5>
                 </div>
-                <div class="col-md-2 text-end">
-                    <p class="mb-0 fw-semibold">সন ২০২৫ ইং</p>
-                </div>
+
             </div>
         </div>
 
@@ -220,52 +218,25 @@
                 <thead class="bg-primary print-thead">
 
                     <tr class="text-center">
+
+                        {{-- নং	নাম	পদবী	মোবাইল নাম্বার --}}
                         <th>নং</th>
-                        <th>জামাতের নাম</th>
-                        <th>নিজ খোরাকি</th>
-                        <th>হাফ ফ্রি</th>
-                        <th>ফুল ফ্রি</th>
-                        <th>আবাসিক</th>
-                        <th>অনাবাসিক</th>
-                        <th>মোট</th>
+                        <th>নাম</th>
+                        <th>পদবী</th>
+                        <th>মোবাইল নাম্বার</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {{-- হেফখানা --}}
-                    <tr>
-                        <td class="text-center">1</td>
-                        <td>হেফখানা</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">3</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">3</td>
-                    </tr>
-                    {{-- নাজেরা --}}
-                    <tr>
-                        <td class="text-center">2</td>
-                        <td>নাজেরা</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">2</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">2</td>
-                    </tr>
-                    {{-- মক্তব --}}
-                    <tr>
-                        <td class="text-center">3</td>
-                        <td>হেফখানা</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">3</td>
-                        <td class="text-center">0</td>
-                        <td class="text-center">0</td>
-                    </tr>
-
+                    @for ($i = 1; $i <= 100; $i++)
+                        <tr>
+                            <td class="text-center">{{ $i }}</td>
+                            <td>হাঃকারী আবুল হাসান ইবনে সোহরাব</td>
+                            <td class="text-center">মুহতামিম</td>
+                            <td class="text-center">০১৯৮৩৫২৪৯৬৮</td>
+                        </tr>
+                    @endfor
                 </tbody>
+
             </table>
         </div>
 

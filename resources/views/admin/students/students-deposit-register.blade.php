@@ -188,7 +188,7 @@
 
 
     <!-- Right: Add Student button -->
-    <div class=" text-md-end text-start my-3 ">
+    <div class=" text-md-end text-start  m-3 mx-4 ">
         <a href="{{ route('create-student') }}" class="btn btn-danger text-white fw-bold">
             <i class="fa-solid fa-plus me-1"></i> নতুন ছাত্র/ছাত্রী যুক্ত করুন
         </a>

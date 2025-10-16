@@ -70,3 +70,6 @@ Route::get('create_teacher', [TeacherController::class, 'createTeacher'])
 // teachers-list
 Route::get('teachers-list', [TeacherController::class, 'teachersList'])
     ->name('teachers-list');
+// teacher-number-list
+Route::get('teacher-number-list', [TeacherController::class, 'teacherNumberList'])
+    ->name('teacher-number-list');

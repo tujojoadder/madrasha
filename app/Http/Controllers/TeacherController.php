@@ -68,4 +68,7 @@ class TeacherController extends Controller
     public function teachersList(){
         return view('admin.teachers.teachers-list');
     }
+    public function teacherNumberList(){
+        return view('admin.teachers.teacher-number-list');
+    }
 }
