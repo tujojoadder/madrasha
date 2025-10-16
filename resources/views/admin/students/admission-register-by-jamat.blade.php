@@ -16,7 +16,8 @@
             #printContent * {
                 visibility: visible;
             }
-           /* every text will be black */
+
+            /* every text will be black */
             * {
                 color: #000 !important;
             }
@@ -237,46 +238,46 @@
                     <p class="mb-0 fw-semibold">সন ২০২৫ ইং</p>
                 </div>
             </div>
-        </div>
 
-        {{-- Table Section --}}
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped align-middle mb-0 print-table">
-                <thead class="bg-primary print-thead">
-                    <tr class="text-center">
-                        <th>নং</th>
-                        <th>ছাত্রের নাম</th>
-                        <th>ভর্তি নং</th>
-                        <th>ফরম নং</th>
-                        <th>নিজ খোরাকি</th>
-                        <th>হাফ ফি</th>
-                        <th>ফুল ফি</th>
-                        <th>আবাসিক</th>
-                        <th>অনাবাসিক</th>
-                        <th>খোরাকির হার</th>
-                        <th>আদায়</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @for ($i = 1; $i <= 50; $i++)
-                        <tr>
-                            <td class="text-center">{{ $i }}</td>
-                            <td>ছাত্র নাম {{ $i }}</td>
-                            <td class="text-center">{{ rand(50003, 2222000) }}</td>
-                            <td class="text-center">{{ rand(50003, 2222000) }}</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">হ্যাঁ</td>
-                            <td class="text-center">না</td>
-                            <td class="text-center">{{ rand(50003, 2222000) }}</td>
-                            <td>{{ rand(5002, 2222000) }}</td>
+
+            {{-- Table Section --}}
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle mb-0 print-table">
+                    <thead class="bg-primary print-thead">
+                        <tr class="text-center">
+                            <th>নং</th>
+                            <th>ছাত্রের নাম</th>
+                            <th>ভর্তি নং</th>
+                            <th>ফরম নং</th>
+                            <th>নিজ খোরাকি</th>
+                            <th>হাফ ফি</th>
+                            <th>ফুল ফি</th>
+                            <th>আবাসিক</th>
+                            <th>অনাবাসিক</th>
+                            <th>খোরাকির হার</th>
+                            <th>আদায়</th>
                         </tr>
-                    @endfor
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @for ($i = 1; $i <= 50; $i++)
+                            <tr>
+                                <td class="text-center">{{ $i }}</td>
+                                <td>ছাত্র নাম {{ $i }}</td>
+                                <td class="text-center">{{ rand(50003, 2222000) }}</td>
+                                <td class="text-center">{{ rand(50003, 2222000) }}</td>
+                                <td class="text-center">না</td>
+                                <td class="text-center">না</td>
+                                <td class="text-center">না</td>
+                                <td class="text-center">হ্যাঁ</td>
+                                <td class="text-center">না</td>
+                                <td class="text-center">{{ rand(50003, 2222000) }}</td>
+                                <td>{{ rand(5002, 2222000) }}</td>
+                            </tr>
+                        @endfor
+                    </tbody>
+                </table>
+            </div>
         </div>
-
         {{-- Print Button --}}
         <div class="m-3 d-flex justify-content-end no-print">
             <button class="btn btn-primary fw-bold" onclick="printDocument()">

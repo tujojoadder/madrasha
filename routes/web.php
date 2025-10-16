@@ -73,3 +73,9 @@ Route::get('teachers-list', [TeacherController::class, 'teachersList'])
 // teacher-number-list
 Route::get('teacher-number-list', [TeacherController::class, 'teacherNumberList'])
     ->name('teacher-number-list');
+// teacher-salary-sheet
+Route::get('teacher-salary-sheet', [TeacherController::class, 'teacherSalarySheet'])
+    ->name('teacher-salary-sheet');
+// salary-day
+Route::get('salary-day', [TeacherController::class, 'salaryDay'])
+    ->name('salary-day');

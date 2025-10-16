@@ -120,8 +120,8 @@
                       <li><a href="{{ route('create_teacher') }}">শিক্ষক তৈরি</a></li>
                       <li><a href="{{ route('teachers-list') }}">শিক্ষক তালিকা</a></li>
                       <li><a href="{{ route('teacher-number-list') }}">শিক্ষকগণের মোবাইল নম্বর </a></li>
-                      <li><a href="api.html">শিক্ষকগণের বেতন তালিকা</a></li>
-                      <li><a href="api.html">শিক্ষকগণের নম্বর তালিকা</a></li>
+                      <li><a href="{{ route('teacher-salary-sheet') }}">শিক্ষকগণের বেতন তালিকা</a></li>
+                      <li><a href="{{ route('salary-day') }}">শিক্ষকগণের বেতন দিন</a></li>
 
                   </ul>
               </li>

@@ -71,4 +71,10 @@ class TeacherController extends Controller
     public function teacherNumberList(){
         return view('admin.teachers.teacher-number-list');
     }
+    public function teacherSalarySheet(){
+        return view('admin.teachers.teacher-salary-sheet');
+    }
+    public function salaryDay(){
+        return view('admin.teachers.salary-day');
+    }
 }

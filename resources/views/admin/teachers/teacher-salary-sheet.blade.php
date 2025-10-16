@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
-@section('title', 'শিক্ষকগণের মোবাইল নম্বর')
+@section('title', 'শিক্ষকগণের বেতন তালিকা')
 
 @push('styles')
     <style>
@@ -94,8 +94,8 @@
             .print-table th,
             .print-table td {
                 border: 0.5px solid #333 !important;
-                padding: 4px 3px !important;
-                text-align: center;
+                padding: 4px 0 4px 7px !important;
+
                 line-height: 1.2 !important;
             }
 
@@ -181,22 +181,43 @@
     <div>
         <ol class="breadcrumb bg-light-secondary p-2">
             <li class="breadcrumb-item"><i class="fa-solid fa-chalkboard-user me-2"></i>শিক্ষক</li>
-            <li aria-current="page" class="breadcrumb-item active fw-bold">শিক্ষকগণের মোবাইল নম্বর</li>
+            <li aria-current="page" class="breadcrumb-item active fw-bold">শিক্ষকগণের বেতন তালিকা</li>
         </ol>
     </div>
 
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-primary">
+            <h5 class="mb-0 text-white">
+                <i class="fa-solid fa-chalkboard-user me-2"></i> শিক্ষকগণের বেতন তালিকা
+            </h5>
+        </div>
+
+        <div class="card-body mb-3">
+            <div class="row  align-items-end ">
+                <!-- Left: Date Picker + Search button -->
+                <div class="col-md-6 d-flex gap-3 align-items-end">
+                    <div class="flex-grow-1">
+                        <label for="end-date" class="form-label fw-semibold">শেষের তারিখ</label>
+                        <input name="end-date" type="text" id="end-date" class="form-control">
+                    </div>
+                    <button type="submit" class="btn b-r-22 btn-info px-4">
+                        দেখুন
+                    </button>
+                </div>
 
 
-    <!-- Right: Add Teacher button -->
-    <div class=" text-md-end text-start m-3 mx-4 ">
-        <a href="{{ route('create_teacher') }}" class="btn btn-danger text-white fw-bold">
-            <i class="fa-solid fa-plus me-1"></i> নতুন শিক্ষক যুক্ত করুন
-        </a>
+                <!-- Right: Add Student button -->
+                <div class="col-md-6 text-md-end text-start mt-3">
+                    <a href="{{ route('create_teacher') }}" class="btn btn-danger text-white fw-bold">
+                        <i class="fa-solid fa-plus me-1"></i> নতুন শিক্ষক যুক্ত করুন
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-
     {{-- card --}}
     <div class="card border-0 shadow-sm mb-4" id="printContent">
-        <div class="card-body">
+        <div class="card-body py-4">
             <!-- Header Section -->
             <div class="print-header row align-items-end mb-3">
                 <div class="col-md-2 mb-2 text-center">
@@ -206,59 +227,71 @@
                 <div class="col-md-8 text-center">
                     <h3 class="mb-2 fw-bold">জামালুল কুরআন মাদরাসা</h3>
                     <p class="mb-1">৭৭, সগীষ সরকার রোড, শেখেরিয়া, ঢাকা-১২০৪, ফোনঃ ৪৭৪৪০২৯৬</p>
-                    <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">শিক্ষকগণের মোবাইল নম্বর</h5>
+                    <h5 class="mt-2 fw-semibold" style="color: #2c5f2d;">শিক্ষকগণের বেতন তালিকা</h5>
                 </div>
 
             </div>
-       
 
-        {{-- Table Section --}}
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped align-middle mb-0 print-table">
-                <thead class="bg-primary print-thead">
-                    <tr>
 
-                        <th class="text-center align-middle">নং</th>
-                        <th>নাম</th>
-                        <th class="text-center align-middle">পদবী</th>
-                        <th class="text-center align-middle">মোবাইল নাম্বার</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @for ($i = 1; $i <= 100; $i++)
+            {{-- Table Section --}}
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle mb-0 print-table">
+                    <thead class="bg-primary print-thead">
                         <tr>
-                            <td class="text-center align-middle">{{ $i }}</td>
-                            <td>হাঃকারী আবুল হাসান ইবনে সোহরাব</td>
-                            <td class="text-center align-middle">মুহতামিম</td>
-                            <td class="text-center align-middle">০১৯৮৩৫২৪৯৬৮</td>
+                            <th class="text-center" style="width: 80px">নং</th>
+                            <th>নাম</th>
+                            <th class="text-center" style="width: 180px">বেতন</th>
+                            <th class="text-center" style="width: 180px">স্বাক্ষর</th>
                         </tr>
-                    @endfor
-                </tbody>
+                    </thead>
+                    <tbody>
+                        @for ($i = 1; $i <= 50; $i++)
+                            <tr>
+                                <td class="text-center">{{ $i }}</td>
+                                <td>ছাত্র নাম {{ $i }}</td>
+                                <td class="text-center">{{ rand(50003, 2222000) }}</td>
+                                <td class="text-center"></td>
 
-            </table>
+                            </tr>
+                        @endfor
+                    </tbody>
+                </table>
+            </div>
         </div>
-
         {{-- Print Button --}}
         <div class="m-3 d-flex justify-content-end no-print">
             <button class="btn btn-primary fw-bold" onclick="printDocument()">
                 <i class="fa-solid fa-print me-2"></i> প্রিন্ট করুন
             </button>
         </div>
-         </div>
     </div>
-    @push('scripts')
-    @endpush
+
+@endsection
+@push('scripts')
     <script>
+        /* print */
         function printDocument() {
             window.print();
         }
+        $(document).ready(function() {
+            // Initialize month/year picker
+            $("#end-date").datepicker({
+                dateFormat: "M yy", // Show short month + year
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true, // Adds "Done" button
+                onClose: function(dateText, inst) {
+                    // Get selected month/year
+                    var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                    var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                    $(this).datepicker('setDate', new Date(year, month, 1));
+                }
+            });
 
-        window.addEventListener('beforeprint', function(event) {
-            console.log('Before printing.');
-        });
+            // Automatically set today's month/year
+            $("#end-date").datepicker('setDate', new Date());
 
-        window.addEventListener('afterprint', function(event) {
-            console.log('After printing');
+
         });
     </script>
-@endsection
+@endpush

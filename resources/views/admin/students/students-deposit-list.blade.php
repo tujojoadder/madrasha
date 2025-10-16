@@ -73,6 +73,10 @@
                 width: 60px !important;
                 height: 60px !important;
             }
+            .student-details{
+                padding: 0 !important;
+                margin: 0 !important;
+            }
 
             /* Table Styling - কম্প্যাক্ট */
             .print-table {
@@ -233,7 +237,7 @@
 
     {{-- card --}}
     <div class="card border-0 shadow-sm mb-4" id="printContent">
-        <div class="card-body py-4">
+        <div class="card-header pt-4">
             <!-- Header Section -->
             <div class="print-header row align-items-end mb-3">
                 <div class="col-md-2 mb-2 text-center">
@@ -250,181 +254,183 @@
                 </div>
             </div>
         </div>
-
-        {{-- student details --}}
-        <div class="row p-3 mx-2">
-            <!-- Left Column -->
-            <div class="col-md-4 mb-3 mb-md-0">
-                <p class="mb-2"><strong>ছাত্রের নামঃ</strong> আজান রহমান</p>
-                <p class="mb-2"><strong>রোলঃ</strong> ১২১</p>
-                <p class="mb-2"><strong>জামাতঃ</strong> নাজেরা</p>
+        <div class="card-body">
+            {{-- student details --}}
+            <div class="row mb-3 px-3 student-details">
+                <!-- Left Column -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <p class="mb-2"><strong>ছাত্রের নামঃ</strong> আজান রহমান</p>
+                    <p class="mb-2"><strong>রোলঃ</strong> ১২১</p>
+                    <p class="mb-2"><strong>জামাতঃ</strong> নাজেরা</p>
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-4">
+                    <p class="mb-2"><strong>মাসিক ধার্যঃ</strong> ৫০০</p>
+                    <p class="mb-2"><strong>বর্ষঃ</strong> 01 Jan 2025</p>
+                    <p class="mb-2"><strong>ভর্তি নংঃ</strong> ২৩১</p>
+                </div>
             </div>
-            <!-- Right Column -->
-            <div class="col-md-4">
-                <p class="mb-2"><strong>মাসিক ধার্যঃ</strong> ৫০০</p>
-                <p class="mb-2"><strong>বর্ষঃ</strong> 01 Jan 2025</p>
-                <p class="mb-2"><strong>ভর্তি নংঃ</strong> ২৩১</p>
+
+            {{-- Table Section --}}
+            <div class="table-responsive ">
+                <table class="table table-bordered  table-striped align-middle mb-0 print-table">
+                    <thead class="bg-primary print-thead">
+                        {{-- মাস	তারিখ	বই নং	রসিদ নং	টাঃ পরিমান	গ্রহণকারী	মন্তব্য --}}
+                        <tr class="text-center">
+                            <th>মাস</th>
+                            <th>তারিখ</th>
+                            <th>বই নং</th>
+                            <th>রসিদ নং</th>
+                            <th>টাঃ পরিমান</th>
+                            <th>গ্রহণকারী</th>
+                            <th>মন্তব্য</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{-- জানুয়ারি --}}
+                        <tr>
+                            <td class="text-center">জানু:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- ফেব্রুয়ারি --}}
+                        <tr>
+                            <td class="text-center">ফেব্রু:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- মার্চ --}}
+                        <tr>
+                            <td class="text-center">মার্চ:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- এপ্রিল --}}
+                        <tr>
+                            <td class="text-center">এপ্রিল:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- মে --}}
+                        <tr>
+                            <td class="text-center">মে:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- জুন --}}
+                        <tr>
+                            <td class="text-center">জুন:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- জুলাই --}}
+                        <tr>
+                            <td class="text-center">জুলাই:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- আগস্ট --}}
+                        <tr>
+                            <td class="text-center">আগষ্ট:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- সেপ্টেম্বর --}}
+                        <tr>
+                            <td class="text-center">সেপ্টে:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- অক্টোবর --}}
+                        <tr>
+                            <td class="text-center">অক্টো:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- নভেম্বর --}}
+                        <tr>
+                            <td class="text-center">নভে:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                        {{-- ডিসেম্বর --}}
+                        <tr>
+                            <td class="text-center">ডিসে:</td>
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            {{-- Print Button --}}
+            <div class="m-3 d-flex justify-content-end no-print">
+                <button class="btn btn-primary fw-bold" onclick="printDocument()">
+                    <i class="fa-solid fa-print me-2"></i> প্রিন্ট করুন
+                </button>
             </div>
         </div>
 
-        {{-- Table Section --}}
-        <div class="table-responsive mx-3">
-            <table class="table table-bordered  table-striped align-middle mb-0 print-table">
-                <thead class="bg-primary print-thead">
-                    {{-- মাস	তারিখ	বই নং	রসিদ নং	টাঃ পরিমান	গ্রহণকারী	মন্তব্য --}}
-                    <tr class="text-center">
-                        <th>মাস</th>
-                        <th>তারিখ</th>
-                        <th>বই নং</th>
-                        <th>রসিদ নং</th>
-                        <th>টাঃ পরিমান</th>
-                        <th>গ্রহণকারী</th>
-                        <th>মন্তব্য</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {{-- জানুয়ারি --}}
-                    <tr>
-                        <td class="text-center">জানু:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- ফেব্রুয়ারি --}}
-                    <tr>
-                        <td class="text-center">ফেব্রু:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- মার্চ --}}
-                    <tr>
-                        <td class="text-center">মার্চ:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- এপ্রিল --}}
-                    <tr>
-                        <td class="text-center">এপ্রিল:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- মে --}}
-                    <tr>
-                        <td class="text-center">মে:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- জুন --}}
-                    <tr>
-                        <td class="text-center">জুন:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- জুলাই --}}
-                    <tr>
-                        <td class="text-center">জুলাই:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- আগস্ট --}}
-                    <tr>
-                        <td class="text-center">আগষ্ট:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- সেপ্টেম্বর --}}
-                    <tr>
-                        <td class="text-center">সেপ্টে:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- অক্টোবর --}}
-                    <tr>
-                        <td class="text-center">অক্টো:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- নভেম্বর --}}
-                    <tr>
-                        <td class="text-center">নভে:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                    {{-- ডিসেম্বর --}}
-                    <tr>
-                        <td class="text-center">ডিসে:</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </div>
-
-        {{-- Print Button --}}
-        <div class="m-3 d-flex justify-content-end no-print">
-            <button class="btn btn-primary fw-bold" onclick="printDocument()">
-                <i class="fa-solid fa-print me-2"></i> প্রিন্ট করুন
-            </button>
-        </div>
     </div>
     @push('scripts')
     @endpush
