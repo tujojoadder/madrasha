@@ -4,14 +4,6 @@
 
 @section('content')
 
-    <div>
-        <ol class="breadcrumb  bg-light-secondary p-2">
-            <li class="breadcrumb-item"><i class="fa-solid fa-users me-2"></i>ছাত্র/ছাত্রী
-            </li>
-            <li aria-current="page" class="breadcrumb-item active fw-bold">ছাত্র/ছাত্রী লিস্ট
-            </li>
-        </ol>
-    </div>
     <div class="row">
         <div class="col-12">
             <div class="card">

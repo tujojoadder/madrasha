@@ -3,7 +3,7 @@
 @section('title', 'User Dashboard')
 
 @section('content')
-   
+    
     <div class="row">
         {{-- manu section --}}
         <div class="col-12">
@@ -21,7 +21,7 @@
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-blue">
 
-                                            <i class="fas fa-user-plus" style="font-size: 30px; color:#ffffff" ></i>
+                                            <i class="fas fa-user-plus" style="font-size: 30px; color:#ffffff"></i>
                                         </div>
                                         <div class="icon-ring ring-blue"></div>
                                     </div>
@@ -75,7 +75,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-cyan">
-                                            <i class="fas fa-minus-circle"  style="font-size: 30px; color:#ffffff"></i>
+                                            <i class="fas fa-minus-circle" style="font-size: 30px; color:#ffffff"></i>
                                         </div>
                                         <div class="icon-ring ring-cyan"></div>
                                     </div>

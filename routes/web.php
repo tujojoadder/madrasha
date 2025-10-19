@@ -61,6 +61,8 @@ Route::get('students-deposit-register', [StudentController::class, 'studentsDepo
 // admission-form
 Route::get('admission-form', [StudentController::class, 'admissionForm'])
     ->name('admission-form');
+//create student
+Route::post('/students/store', [StudentController::class, 'store'])->name('students.store');
 
 /* teachers */
 

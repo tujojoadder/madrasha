@@ -28,8 +28,45 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validate the request
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'birth_day' => 'nullable|string',
+            'blood_group' => 'nullable|in:A+,B+,AB+,O+,A-,B-,AB-,O-',
+            'father_name' => 'nullable|string|max:255',
+            'mother_name' => 'nullable|string|max:255',
+            'father_profesion' => 'nullable|string|max:255',
+            'parents_phone' => 'nullable|string|max:15',
+            'relation' => 'nullable|string|max:100',
+            'email' => 'nullable|email|max:255',
+            'current_address' => 'nullable|string',
+            'permanent_address' => 'nullable|string',
+            'admission_date' => 'nullable|string',
+            'form_number' => 'nullable|integer',
+            'admission_number' => 'nullable|integer',
+            'coursefee' => 'nullable|numeric|min:0',
+            'jamat_id' => 'nullable|in:1,2,3',
+            'meal_type' => 'nullable|in:nij_khoraki,half_free,full_free',
+            'residential' => 'nullable|in:abasik,onabashik',
+            'student_type' => 'nullable|in:notun,puraton',
+            'etim' => 'nullable|in:yes,no',
+            'bording_food' => 'nullable|in:yes,no',
+            'food_bill' => 'nullable|numeric|min:0',
+            'note' => 'nullable|string'
+        ]);
+
+        $validated['created_by'] = auth()->check() ? auth()->id() : null;
+        $validated['updated_by'] = auth()->check() ? auth()->id() : null;
+        $validated['manage_by'] = auth()->check() ? auth()->id() : null;
+        $validated['prepared_by'] = auth()->check() ? auth()->id() : null;
+
+
+        // Create the student
+        $student = Student::create($validated);
+
+        return redirect()->back()->with('success', 'ছাত্র/ছাত্রী সফলভাবে সংযুক্ত করা হয়েছে!');
     }
+
 
     /**
      * Display the specified resource.
@@ -98,5 +135,4 @@ class StudentController extends Controller
     {
         return view('admin.students.admission-form');
     }
-
 }
