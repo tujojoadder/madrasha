@@ -3,13 +3,8 @@
 @section('title', 'User Dashboard')
 
 @section('content')
-    <div>
-        <ol class="breadcrumb  bg-light-secondary p-2">
-            <li class="breadcrumb-item"> <strong><i class="fa-regular fa-house"></i> ড্যাশবোর্ড</strong>
-            </li>
-        </ol>
-    </div>
-    <div class="row mt-4">
+   
+    <div class="row">
         {{-- manu section --}}
         <div class="col-12">
             <!-- Dashboard Header -->
