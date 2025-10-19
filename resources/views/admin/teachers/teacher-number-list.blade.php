@@ -225,7 +225,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @for ($i = 1; $i <= 100; $i++)
+                    @for ($i = 1; $i <= 50; $i++)
                         <tr>
                             <td class="text-center align-middle">{{ $i }}</td>
                             <td>হাঃকারী আবুল হাসান ইবনে সোহরাব</td>

@@ -25,7 +25,8 @@
                                 <div class="d-flex align-items-center">
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-blue">
-                                            <i class="fas fa-user-plus"></i>
+
+                                            <i class="fas fa-user-plus" style="font-size: 30px; color:#ffffff" ></i>
                                         </div>
                                         <div class="icon-ring ring-blue"></div>
                                     </div>
@@ -52,7 +53,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-green">
-                                            <i class="fas fa-plus-circle"></i>
+                                            <i class="fas fa-plus-circle  style="font-size: 30px; color:#ffffff""></i>
                                         </div>
                                         <div class="icon-ring ring-green"></div>
                                     </div>
@@ -79,7 +80,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-cyan">
-                                            <i class="fas fa-minus-circle"></i>
+                                            <i class="fas fa-minus-circle"  style="font-size: 30px; color:#ffffff"></i>
                                         </div>
                                         <div class="icon-ring ring-cyan"></div>
                                     </div>
@@ -106,7 +107,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-orange">
-                                            <i class="fas fa-sms"></i>
+                                            <i class="fas fa-sms  style="font-size: 30px; color:#ffffff""></i>
                                         </div>
                                         <div class="icon-ring ring-orange"></div>
                                     </div>
@@ -133,7 +134,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-yellow">
-                                            <i class="fas fa-university"></i>
+                                            <i class="fas fa-university  style="font-size: 30px; color:#ffffff""></i>
                                         </div>
                                         <div class="icon-ring ring-yellow"></div>
                                     </div>
@@ -160,7 +161,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-pink">
-                                            <i class="fas fa-file-invoice"></i>
+                                            <i class="fas fa-file-invoice  style="font-size: 30px; color:#ffffff""></i>
                                         </div>
                                         <div class="icon-ring ring-pink"></div>
                                     </div>
@@ -187,7 +188,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-lime">
-                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-check-circle  style="font-size: 30px; color:#ffffff""></i>
                                         </div>
                                         <div class="icon-ring ring-lime"></div>
                                     </div>
@@ -214,7 +215,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-purple">
-                                            <i class="fas fa-chart-line"></i>
+                                            <i class="fas fa-chart-line  style="font-size: 30px; color:#ffffff""></i>
                                         </div>
                                         <div class="icon-ring ring-purple"></div>
                                     </div>
@@ -241,7 +242,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="icon-container-premium">
                                         <div class="icon-bg icon-bg-indigo">
-                                            <i class="fas fa-id-card"></i>
+                                            <i class="fas fa-id-card  style="font-size: 30px; color:#ffffff""></i>
                                         </div>
                                         <div class="icon-ring ring-indigo"></div>
                                     </div>
@@ -293,7 +294,7 @@
 
 
         <!-- Line & Column Chart start -->
-        <div class="col-md-6">
+        <div class="col-12">
             <div class="card">
                 <div class="card-header">
                     <h5> Line & Column Chart</h5>
