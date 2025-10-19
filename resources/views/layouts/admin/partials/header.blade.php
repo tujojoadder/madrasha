@@ -1,5 +1,5 @@
 <header class="header-main">
-    <div class="container-fluid">
+    <div class="container-fluid me-0 pe-0" >
         <div class="row">
             <div class="col-8 col-sm-6 d-flex align-items-center header-left p-0">
                 <span class="header-toggle ">
@@ -546,13 +546,7 @@
 
                     <li class="header-profile-settings">
 
-                        <div class="d-flex align-items-center nav-profile px-3">
-
-                            {{--  <div class="flex-grow-1 ps-2">
-                                <h6 class="text-primary mb-0"> Md Rohim Islam</h6>
-                                <p class="text-muted f-s-12 mb-0">Admin</p>
-                            </div> --}}
-
+                        <div class="d-flex align-items-center nav-profile pe-3 ps-2">
 
                             <div class="dropdown profile-menu-dropdown">
 
@@ -566,15 +560,16 @@
                                         class="position-absolute top-0 end-0 p-1 bg-success border border-light rounded-circle"></span>
                                 </span>
                                 <ul class="dropdown-menu">
-                                  <div class="px-3 pb-2 border-bottom mb-2">
-    <div class="d-flex align-items-center">
-       
-        <div>
-            <span class="fw-semibold text-success small d-block">Osama Been Tarik</span>
-            <span class="text-muted" style="font-size: 12px;">Administrator</span>
-        </div>
-    </div>
-</div>
+                                    <div class="px-3 pb-2 border-bottom mb-2">
+                                        <div class="d-flex align-items-center">
+
+                                            <div>
+                                                <span class="fw-semibold text-success small d-block">Osama Been
+                                                    Tarik</span>
+                                                <span class="text-muted" style="font-size: 12px;">Administrator</span>
+                                            </div>
+                                        </div>
+                                    </div>
 
 
                                     <li class="dropdown-item">
