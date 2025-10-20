@@ -17,6 +17,7 @@ return new class extends Migration
 
             // Basic Student Information
             $table->string('name');
+            $table->string('photo')->nullable();
             $table->string('birth_day')->nullable();
             $table->foreignId('blood_group_id')->nullable()->constrained('blood_groups')->nullOnDelete();
 

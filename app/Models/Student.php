@@ -11,6 +11,7 @@ class Student extends Model
      // Mass assignable fields
     protected $fillable = [
         'name',
+        'photo',
         'birth_day',
         'blood_group_id',
         'father_name',
@@ -18,7 +19,7 @@ class Student extends Model
         'father_profesion',
         'parents_phone',
         'relation',
-        'emaisl',
+        'email',
         'current_address',
         'permanent_address',
         'admission_date',
