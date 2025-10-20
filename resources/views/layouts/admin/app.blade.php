@@ -155,10 +155,17 @@
     <!-- jQuery UI CDN -->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <!-- data table js-->
-    <script src="../assets/js/data_table.js"></script>
+        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+        <script src="{{ asset('vendor/datatables/buttons.server-side.js') }}"></script>
 
     <!-- table-js -->
-    <script src="{{ asset('assets/js/table.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/table.js') }}"></script> --}}
 
     <!-- chartjs js -->
     <script src="{{ asset('assets/vendor/chartjs/chart.js') }}"></script>

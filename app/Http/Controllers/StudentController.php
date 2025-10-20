@@ -2,27 +2,152 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\StudentsDataTable;
 use App\Models\Student;
 use Illuminate\Http\Request;
+use Yajra\DataTables\Facades\DataTables;
 
 class StudentController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    /*   public function index()
     {
         return view('admin.students.students-list');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    } */
+   
+  
+/*    public function index(Request $request)
+   {
+       if ($request->ajax()) {
+           $students = Student::with(['bloodGroup', 'jamat'])
+               ->select('students.*');
+   
+           return DataTables::of($students)
+               ->addIndexColumn()
+               ->addColumn('photo', function ($student) {
+                   $photoUrl = $student->photo
+                       ? asset('storage/' . $student->photo)
+                       : 'https://via.placeholder.com/80';
+                   $fileInputId = 'file' . $student->id;
+   
+                   return '
+                   <div class="text-center" style="width: 120px;">
+                       <img src="' . $photoUrl . '" alt="Student Photo" 
+                           class="img-thumbnail mb-2 student-photo-' . $student->id . '" 
+                           style="width: 80px; height: 80px; object-fit: cover;">
+                       <label for="' . $fileInputId . '" class="btn btn-warning btn-sm w-100">
+                           <i class="fa-solid fa-upload"></i> ছবি
+                       </label>
+                       <input type="file" id="' . $fileInputId . '" class="d-none photo-upload" 
+                           data-student-id="' . $student->id . '" accept="image/*">
+                   </div>
+               ';
+               })
+               ->addColumn('details', function ($student) {
+                   return '
+                   <p class="mb-1">নাম : <strong>' . ($student->name ?? 'N/A') . '</strong></p>
+                   <p class="mb-1">জন্ম তারিখ : <strong>' . ($student->birth_day ?? 'N/A') . '</strong></p>
+                   <p class="mb-1">রক্তের গ্রুপ : <strong>' . ($student->bloodGroup->name ?? 'N/A') . '</strong></p>
+                   <p class="mb-1">আইডি : <strong>' . ($student->id ?? 'N/A') . '</strong></p>
+                   <p class="mb-1">ভর্তি তারিখ : <strong>' . ($student->admission_date ? \Carbon\Carbon::parse($student->admission_date)->format('d M Y') : 'N/A') . '</strong></p>
+                   <p class="mb-1">অভিভাবকের নাম : <strong>' . ($student->father_name ?? 'N/A') . '</strong></p>
+                   <p class="mb-1">ই-মেইল : <strong>' . ($student->email ?? 'N/A') . '</strong></p>
+                   <p class="mb-1">অভিভাবকের ফোন : <strong>' . ($student->parents_phone ?? 'N/A') . '</strong></p>
+               ';
+               })
+               ->addColumn('batch_info', function ($student) {
+                   $timeSchedule = 'N/A';
+                   if ($student->student_type === 'notun') {
+                       $timeSchedule = '8:00 AM - 12:00 PM';
+                   } elseif ($student->student_type === 'puraton') {
+                       $timeSchedule = '1:00 PM - 5:00 PM';
+                   }
+   
+                   $studentTypeBangla = [
+                       'notun' => 'মর্নিং',
+                       'puraton' => 'ডে'
+                   ];
+   
+                   return '
+                   <p class="mb-1">জামাত : <strong>' . ($student->jamat->name ?? 'N/A') . '</strong></p>
+                   <p class="mb-1">টাইপ : <strong>' . ($studentTypeBangla[$student->student_type] ?? 'N/A') . '</strong></p>
+                   <p class="mb-1">সময় : <strong>' . $timeSchedule . '</strong></p>
+               ';
+               })
+               ->addColumn('account_summary', function ($student) {
+                   // $totalPaid = $student->payments()->sum('amount');
+                   $totalPaid = 0;
+                   $courseFee = $student->coursefee ?? 0;
+                   $due = $courseFee - $totalPaid;
+   
+                   return '
+                   <p class="mb-1 text-success">সর্বমোট জমা : <strong>৳ ' . number_format($totalPaid, 0) . '</strong></p>
+                   <p class="mb-1">কোর্স ফি : <strong>৳ ' . number_format($courseFee, 0) . '</strong></p>
+                   <p class="mb-1 ' . ($due > 0 ? 'text-danger' : 'text-success') . '">মোট বাকি : <strong>৳ ' . number_format($due, 0) . '</strong></p>
+               ';
+               })
+               ->addColumn('action_buttons', function ($student) {
+                   return '
+                   <button class="btn btn-primary btn-sm d-block mb-2 w-100" onclick="viewDetails(' . $student->id . ')">
+                       <i class="fa-solid fa-eye"></i> বিস্তারিত
+                   </button>
+                   <button class="btn btn-success btn-sm d-block w-100" onclick="sendSMS(' . $student->id . ')">
+                       <i class="fa-solid fa-message"></i> এস এম এস
+                   </button>
+               ';
+               })
+               ->addColumn('delete_button', function ($student) {
+                   return '
+                   <button class="btn btn-danger btn-sm" onclick="deleteStudent(' . $student->id . ')">
+                       <i class="fa-solid fa-trash"></i> মুছুন
+                   </button>
+               ';
+               })
+               ->filterColumn('details', function ($query, $keyword) {
+                   $query->where(function ($q) use ($keyword) {
+                       $q->where('students.name', 'like', "%{$keyword}%")
+                           ->orWhere('students.parents_phone', 'like', "%{$keyword}%")
+                           ->orWhere('students.email', 'like', "%{$keyword}%")
+                           ->orWhere('students.father_name', 'like', "%{$keyword}%")
+                           ->orWhere('students.id', 'like', "%{$keyword}%")
+                           ->orWhereHas('bloodGroup', function ($bq) use ($keyword) {
+                               $bq->where('name', 'like', "%{$keyword}%");
+                           });
+                   });
+               })
+               ->filterColumn('batch_info', function ($query, $keyword) {
+                   $query->orWhereHas('jamat', function ($q) use ($keyword) {
+                       $q->where('name', 'like', "%{$keyword}%");
+                   })->orWhere('student_type', 'like', "%{$keyword}%");
+               })
+               ->orderColumn('details', function ($query, $order) {
+                   $query->orderBy('students.name', $order);
+               })
+               ->rawColumns(['photo', 'details', 'batch_info', 'account_summary', 'action_buttons', 'delete_button'])
+               ->make(true);
+       }
+   
+       return view('admin.students.students-list');
+   } */
+   
+    public function index(StudentsDataTable $dataTable)
     {
-        return view('admin.students.create-student');
+        return $dataTable->render('admin.students.students-list');
     }
 
+
+
+
+
+
+
+  public function create()
+  {
+      return view('admin.students.create-student');
+    }
+    
     /**
      * Store a newly created resource in storage.
      */
@@ -68,13 +193,7 @@ class StudentController extends Controller
     }
 
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Student $student)
-    {
-        //
-    }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -135,4 +254,6 @@ class StudentController extends Controller
     {
         return view('admin.students.admission-form');
     }
+
+
 }

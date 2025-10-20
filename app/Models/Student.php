@@ -55,5 +55,17 @@ class Student extends Model
         'food_bill' => 'decimal:2',
     ];
 
+      public function bloodGroup()
+    {
+        return $this->belongsTo(BloodGroup::class);
+    }
+
+    /**
+     * Get the jamat (class) that owns the student.
+     */
+    public function jamat()
+    {
+        return $this->belongsTo(Jamat::class);
+    }
     
 }
