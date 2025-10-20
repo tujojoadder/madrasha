@@ -18,34 +18,34 @@ return new class extends Migration
             // Basic Student Information
             $table->string('name');
             $table->string('birth_day')->nullable();
-            $table->string('blood_group')->nullable(); // রক্তের গ্রুপ
+            $table->foreignId('blood_group_id')->nullable()->constrained('blood_groups')->nullOnDelete();
 
             // Parent Information
-            $table->string('father_name')->nullable(); // পিতার নাম
-            $table->string('mother_name')->nullable(); // মাতার নাম
-            $table->string('father_profesion')->nullable(); // পিতার পেশা
+            $table->string('father_name')->nullable();
+            $table->string('mother_name')->nullable();
+            $table->string('father_profesion')->nullable();
 
             // Contact Information
-            $table->string('parents_phone')->nullable(); // মোবাইল নম্বর
-            $table->string('relation')->nullable(); // অভিবাবকের সম্পর্ক
-            $table->string('email')->nullable(); // ই-মেইল
+            $table->string('parents_phone')->nullable();
+            $table->string('relation')->nullable();
+            $table->string('email')->nullable();
 
             // Address
-            $table->text('current_address')->nullable(); // বর্তমান ঠিকানা
-            $table->text('permanent_address')->nullable(); // স্থায়ী ঠিকানা
+            $table->text('current_address')->nullable();
+            $table->text('permanent_address')->nullable();
 
             // Admission Information
-            $table->date('admission_date')->nullable(); // ভর্তি তারিখ
-            $table->integer('form_number')->nullable(); // ফরম নম্বর
-            $table->integer('admission_number')->nullable(); // ভর্তি নম্বর
-            $table->decimal('coursefee', 10, 2)->nullable(); // বেতনের পরিমান
+            $table->date('admission_date')->nullable();
+            $table->integer('form_number')->nullable();
+            $table->integer('admission_number')->nullable();
+            $table->decimal('coursefee', 10, 2)->nullable();
 
             //  জামাতের নাম
             $table->foreignId('jamat_id')->nullable()->constrained('jamats')->nullOnDelete();
 
             // Boarding Information
-            $table->enum('bording_food', ['no', 'yes'])->nullable()->default('no'); 
-            $table->decimal('food_bill', 10, 2)->nullable(); 
+            $table->enum('bording_food', ['no', 'yes'])->nullable()->default('no');
+            $table->decimal('food_bill', 10, 2)->nullable();
 
             // Notes
             $table->text('note')->nullable();

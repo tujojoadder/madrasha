@@ -82,25 +82,25 @@
 
                                 <!-- রক্তের গ্রুপ -->
                                 <div class="mb-3">
-                                    <label for="blood_group" class="form-label fw-semibold">রক্তের গ্রুপ (যদি জানা
+                                    <label for="blood_group_id" class="form-label fw-semibold">রক্তের গ্রুপ (যদি জানা
                                         থাকে)</label>
-                                    <select name="blood_group" id="blood_group" class="form-select">
+                                    <select name="blood_group_id" id="blood_group_id" class="form-select">
                                         <option selected value="">নির্বাচন করুন</option>
-                                        <option value="A+" {{ old('blood_group') == 'A+' ? 'selected' : '' }}>A+
+                                        <option value="1" {{ old('blood_group_id') == 'A+' ? 'selected' : '' }}>A+
                                         </option>
-                                        <option value="B+" {{ old('blood_group') == 'B+' ? 'selected' : '' }}>B+
+                                        <option value="2" {{ old('blood_group_id') == 'A-' ? 'selected' : '' }}>A-
                                         </option>
-                                        <option value="AB+" {{ old('blood_group') == 'AB+' ? 'selected' : '' }}>AB+
+                                        <option value="3" {{ old('blood_group_id') == 'B+' ? 'selected' : '' }}>B+
                                         </option>
-                                        <option value="O+" {{ old('blood_group') == 'O+' ? 'selected' : '' }}>O+
+                                        <option value="4" {{ old('blood_group_id') == 'B-' ? 'selected' : '' }}>B-
                                         </option>
-                                        <option value="A-" {{ old('blood_group') == 'A-' ? 'selected' : '' }}>A-
+                                        <option value="5" {{ old('blood_group_id') == 'O+' ? 'selected' : '' }}>O+
                                         </option>
-                                        <option value="B-" {{ old('blood_group') == 'B-' ? 'selected' : '' }}>B-
+                                        <option value="6" {{ old('blood_group_id') == 'O-' ? 'selected' : '' }}>O-
                                         </option>
-                                        <option value="AB-" {{ old('blood_group') == 'AB-' ? 'selected' : '' }}>AB-
+                                        <option value="7" {{ old('blood_group_id') == 'AB+' ? 'selected' : '' }}>AB+
                                         </option>
-                                        <option value="O-" {{ old('blood_group') == 'O-' ? 'selected' : '' }}>O-
+                                        <option value="8" {{ old('blood_group_id') == 'AB-' ? 'selected' : '' }}>AB-
                                         </option>
                                     </select>
                                 </div>

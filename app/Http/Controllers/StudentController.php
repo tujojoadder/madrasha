@@ -32,7 +32,7 @@ class StudentController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'birth_day' => 'nullable|string',
-            'blood_group' => 'nullable|in:A+,B+,AB+,O+,A-,B-,AB-,O-',
+            'blood_group_id' => 'nullable|exists:blood_groups,id',
             'father_name' => 'nullable|string|max:255',
             'mother_name' => 'nullable|string|max:255',
             'father_profesion' => 'nullable|string|max:255',

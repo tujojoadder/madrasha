@@ -12,7 +12,7 @@ class Student extends Model
     protected $fillable = [
         'name',
         'birth_day',
-        'blood_group',
+        'blood_group_id',
         'father_name',
         'mother_name',
         'father_profesion',
